@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { classifyLookupConflict, STATUS_EXAMPLES } from './statusExamples'
+import { classifyLookupConflict, STATUS_EXAMPLES } from '@/features/eventRegistration/statusExamples'
 
 describe('event registration status examples', () => {
   it('shows every backend outcome without writing a check-in', () => {

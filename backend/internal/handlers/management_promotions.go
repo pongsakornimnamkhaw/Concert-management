@@ -88,7 +88,7 @@ type PromotionApprovalUI struct {
 	PromotionID string `json:"promotion_id"`
 }
 
-// PromotionUI is the singular-relation view used by frontend/src/types/promotion.ts.
+// PromotionUI is the singular-relation view used by frontend/src/features/promotion/types/promotion.ts.
 // Terms live in PromoCondition.ConditionDetail; minimum spend lives in DiscountInfo.
 type PromotionUI struct {
 	PromotionID        string                     `json:"promotion_id"`

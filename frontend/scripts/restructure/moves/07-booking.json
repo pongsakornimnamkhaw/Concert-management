@@ -1,0 +1,18 @@
+{
+  "src/api/bookingPaymentApi.ts": "src/features/booking/api/bookingPaymentApi.ts",
+  "src/api/bookingPaymentApi.test.ts": "src/features/booking/api/bookingPaymentApi.test.ts",
+  "src/api/seatInventoryApi.ts": "src/features/booking/api/seatInventoryApi.ts",
+  "src/api/seatInventoryApi.test.ts": "src/features/booking/api/seatInventoryApi.test.ts",
+  "src/types/booking.ts": "src/features/booking/types/booking.ts",
+  "src/utils/bookingStore.ts": "src/features/booking/utils/bookingStore.ts",
+  "src/utils/ticketCode.ts": "src/features/booking/utils/ticketCode.ts",
+  "src/utils/seatPromotion.ts": "src/features/booking/utils/seatPromotion.ts",
+  "src/utils/seatPromotion.test.ts": "src/features/booking/utils/seatPromotion.test.ts",
+  "src/components/SeatSelection": "src/features/booking/components/seatSelection",
+  "src/components/tickets": "src/features/booking/components/tickets",
+  "src/pages/Customer/ZoneSelection": "src/features/booking/pages/ZoneSelection",
+  "src/pages/Customer/SeatSelection": "src/features/booking/pages/SeatSelection",
+  "src/pages/Customer/VenueSeatsView": "src/features/booking/pages/VenueSeatsView",
+  "src/pages/Customer/Account": "src/features/booking/pages/CustomerAccount",
+  "src/pages/Employee/SalesBookingManagement": "src/features/booking/pages/SalesBookingManagement"
+}

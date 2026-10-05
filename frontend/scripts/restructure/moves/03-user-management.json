@@ -1,0 +1,11 @@
+{
+  "src/api/employeeAccountApi.ts": "src/features/userManagement/api/employeeAccountApi.ts",
+  "src/api/employeeAccountApi.test.ts": "src/features/userManagement/api/employeeAccountApi.test.ts",
+  "src/pages/Employee/employees/EmployeeListPage.tsx": "src/features/userManagement/pages/EmployeeList/index.tsx",
+  "src/pages/Employee/employees/EmployeeFormPage.tsx": "src/features/userManagement/pages/EmployeeForm/index.tsx",
+  "src/pages/Employee/employees/PasswordResetRequestsPanel.tsx": "src/features/userManagement/components/PasswordResetRequestsPanel.tsx",
+  "src/pages/Employee/employees/PasswordResetRequestsPanel.test.tsx": "src/features/userManagement/components/PasswordResetRequestsPanel.test.tsx",
+  "src/pages/Employee/history/UsageHistoryPage.tsx": "src/features/userManagement/pages/UsageHistory/index.tsx",
+  "src/pages/Employee/history/UsageHistoryPage.test.tsx": "src/features/userManagement/pages/UsageHistory/UsageHistoryPage.test.tsx",
+  "src/pages/Employee/Account": "src/features/userManagement/pages/EmployeeAccount"
+}

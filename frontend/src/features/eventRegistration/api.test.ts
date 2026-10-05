@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from 'vitest'
-import { registrationApi } from './api'
+import { registrationApi } from '@/features/eventRegistration/api'
 
 afterEach(() => vi.restoreAllMocks())
 

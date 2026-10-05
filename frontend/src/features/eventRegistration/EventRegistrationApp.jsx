@@ -1,9 +1,9 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { BrowserQRCodeReader } from '@zxing/browser'
-import { registrationApi } from './api'
-import { STATUS_EXAMPLES } from './statusExamples'
-import { formatTicketCode, normalizeTicketCode } from './ticketCode'
-import { runAutomaticCheckIn } from './checkInFlow'
+import { registrationApi } from '@/features/eventRegistration/api'
+import { STATUS_EXAMPLES } from '@/features/eventRegistration/statusExamples'
+import { formatTicketCode, normalizeTicketCode } from '@/features/eventRegistration/ticketCode'
+import { runAutomaticCheckIn } from '@/features/eventRegistration/checkInFlow'
 
 const SAMPLE_TICKET = { ticketId:'TK-2026-0459',concertName:'Acoustic Sessions: Bangkok',zoneType:'B',seatRow:'B',seatColumn:'24',ticketStatus:'VALID' }
 const formatDateTime = value => value ? new Intl.DateTimeFormat('th-TH',{dateStyle:'medium',timeStyle:'medium'}).format(new Date(value)) : '-'

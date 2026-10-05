@@ -1,6 +1,6 @@
 import { afterEach, describe, expect, it, vi } from 'vitest'
 
-import { clearConcertLayout, saveConcertPlan, saveTicketDesign } from './api'
+import { clearConcertLayout, saveConcertPlan, saveTicketDesign } from '@/features/ticketPlanning/api'
 
 afterEach(() => vi.restoreAllMocks())
 

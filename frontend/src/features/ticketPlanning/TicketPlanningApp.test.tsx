@@ -2,12 +2,12 @@ import { fireEvent, render, screen, waitFor, within } from '@testing-library/rea
 import userEvent from '@testing-library/user-event'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
 
-import TicketPlanningApp, { avoidSeatCollision } from './TicketPlanningApp'
+import TicketPlanningApp, { avoidSeatCollision } from '@/features/ticketPlanning/TicketPlanningApp'
 
 const loadConcerts = vi.fn()
 const saveTicketDesign = vi.fn()
 
-vi.mock('./api', () => ({
+vi.mock('@/features/ticketPlanning/api', () => ({
   clearConcertLayout: vi.fn(),
   loadConcerts: (...args: unknown[]) => loadConcerts(...args),
   saveConcertLayout: vi.fn(),

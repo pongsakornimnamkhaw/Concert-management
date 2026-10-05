@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { normalizeZoneForEditor, seatKey } from './zoneData'
+import { normalizeZoneForEditor, seatKey } from '@/features/ticketPlanning/zoneData'
 
 describe('ticket planning zone transport', () => {
   it('normalizes the persisted zone price and separates client seat keys from numeric IDs', () => {

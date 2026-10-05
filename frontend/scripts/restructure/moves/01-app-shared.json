@@ -1,0 +1,15 @@
+{
+  "src/App.tsx": "src/app/App.tsx",
+  "src/App.css": "src/app/App.css",
+  "src/components/layout": "src/layouts/backoffice",
+  "src/components/common/CustomerHeader.tsx": "src/layouts/customer/CustomerHeader.tsx",
+  "src/components/common/CustomerHeader.test.tsx": "src/layouts/customer/CustomerHeader.test.tsx",
+  "src/components/common/CustomerConcertNotifications.tsx": "src/layouts/customer/CustomerConcertNotifications.tsx",
+  "src/components/common/ConfirmDeleteDialog.tsx": "src/shared/components/ConfirmDeleteDialog.tsx",
+  "src/components/common/Logo.tsx": "src/shared/components/Logo.tsx",
+  "src/components/ErrorAlert.tsx": "src/shared/components/ErrorAlert.tsx",
+  "src/components/ui/Pagination.tsx": "src/shared/components/Pagination.tsx",
+  "src/utils/posterPalette.ts": "src/shared/utils/posterPalette.ts",
+  "src/utils/posterPalette.test.ts": "src/shared/utils/posterPalette.test.ts",
+  "src/assets/octavia-logo.png": "src/assets/logo/octavia-logo.png"
+}

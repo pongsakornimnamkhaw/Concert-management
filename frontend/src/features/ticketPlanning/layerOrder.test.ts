@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { nextLayerOrder } from './layerOrder'
+import { nextLayerOrder } from '@/features/ticketPlanning/layerOrder'
 
 describe('nextLayerOrder', () => {
   it('uses a compact database-safe sequence instead of timestamps', () => {

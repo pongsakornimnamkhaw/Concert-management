@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { formatTicketCode, normalizeTicketCode } from './ticketCode'
+import { formatTicketCode, normalizeTicketCode } from '@/features/eventRegistration/ticketCode'
 
 describe('normalizeTicketCode', () => {
   it('extracts the ticket ID from booking QR payloads', () => {

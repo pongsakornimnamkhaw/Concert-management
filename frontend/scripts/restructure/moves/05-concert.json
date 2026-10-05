@@ -1,0 +1,23 @@
+{
+  "src/api/concertApi.ts": "src/features/concert/api/concertApi.ts",
+  "src/components/Notification/NotificationBell.tsx": "src/features/concert/components/NotificationBell.tsx",
+  "src/components/posterShow/posterShow.tsx": "src/features/concert/components/PosterShow.tsx",
+  "src/components/posterShow/posterShow.test.tsx": "src/features/concert/components/PosterShow.test.tsx",
+  "src/components/slide/Slide.tsx": "src/features/concert/components/Slide.tsx",
+  "src/hooks/useCustomerConcerts.ts": "src/features/concert/hooks/useCustomerConcerts.ts",
+  "src/utils/customerConcertCard.ts": "src/features/concert/utils/customerConcertCard.ts",
+  "src/utils/customerConcertCard.test.ts": "src/features/concert/utils/customerConcertCard.test.ts",
+  "src/data/customerEvents.ts": "src/features/concert/data/customerEvents.ts",
+  "src/pages/Employee/ConcertDashBoard": "src/features/concert/pages/ConcertDashboard",
+  "src/pages/Employee/AddConcert": "src/features/concert/pages/AddConcert",
+  "src/pages/Employee/EditConcert": "src/features/concert/pages/EditConcert",
+  "src/pages/Employee/ConcertEditHistory": "src/features/concert/pages/ConcertEditHistory",
+  "src/pages/Employee/ConcertStatus": "src/features/concert/pages/ConcertStatus",
+  "src/pages/Employee/AddDocument": "src/features/concert/pages/AddDocument",
+  "src/pages/Employee/Responsibility": "src/features/concert/pages/Responsibility",
+  "src/pages/Employee/SearchConcert": "src/features/concert/pages/SearchConcert",
+  "src/pages/Customer/Home": "src/features/concert/pages/Home",
+  "src/pages/Customer/Events": "src/features/concert/pages/Events",
+  "src/pages/Customer/EventDetail": "src/features/concert/pages/EventDetail",
+  "src/pages/Customer/intro": "src/features/concert/pages/Intro"
+}

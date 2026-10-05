@@ -43,7 +43,7 @@ func main() {
 	if repairedEmployees > 0 {
 		log.Printf("Repaired initial passwords for %d existing employee account(s)", repairedEmployees)
 	}
-	log.Printf("Demo accounts ready: 10 employees + 10 customers (see test.md)")
+	log.Printf("Demo accounts ready: 10 employees + 10 customers (see docs/test-accounts.md)")
 
 	// 3. Initialize Fiber App
 	app := fiber.New(fiber.Config{BodyLimit: 20 * 1024 * 1024})

@@ -1,9 +1,9 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import { ArrowLeftIcon, CheckIcon, CloseIcon, PlusIcon, SaveIcon, SearchIcon, TrashIcon, UploadIcon, UsersIcon } from './icons'
-import { blankConcert, initialConcerts } from './seed'
-import { clearConcertLayout, loadConcerts, saveConcertLayout, saveConcertPlan, saveTicketDesign } from './api'
-import { nextLayerOrder } from './layerOrder'
-import { normalizeZoneForEditor, seatKey } from './zoneData'
+import { ArrowLeftIcon, CheckIcon, CloseIcon, PlusIcon, SaveIcon, SearchIcon, TrashIcon, UploadIcon, UsersIcon } from '@/features/ticketPlanning/icons'
+import { blankConcert, initialConcerts } from '@/features/ticketPlanning/seed'
+import { clearConcertLayout, loadConcerts, saveConcertLayout, saveConcertPlan, saveTicketDesign } from '@/features/ticketPlanning/api'
+import { nextLayerOrder } from '@/features/ticketPlanning/layerOrder'
+import { normalizeZoneForEditor, seatKey } from '@/features/ticketPlanning/zoneData'
 
 const STORAGE_KEY = 'octavia-concerts-v1'
 

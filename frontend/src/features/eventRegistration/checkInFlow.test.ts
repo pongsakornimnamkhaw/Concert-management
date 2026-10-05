@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from 'vitest';
 
-import { runAutomaticCheckIn } from './checkInFlow';
+import { runAutomaticCheckIn } from '@/features/eventRegistration/checkInFlow';
 
 const apiError = (status: number, code?: string, data: Record<string, unknown> = {}) =>
   Object.assign(new Error('request failed'), { status, data: { ...data, code } });

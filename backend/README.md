@@ -1,15 +1,40 @@
-# Concert Management Models
+# Octavia — Backend
 
-Entity/Model สำหรับระบบจัดการคอนเสิร์ต เขียนด้วย Go และ GORM จาก class diagram ที่กำหนด
+Go + Fiber + GORM + PostgreSQL
 
-## การใช้งาน
+## เริ่มต้นใช้งาน
 
-เรียก `model.AutoMigrate(db)` หลังจากเปิดการเชื่อมต่อฐานข้อมูลด้วย GORM แล้ว
+```bash
+docker compose up -d          # PostgreSQL :5432 และ pgAdmin :8081 (ดู compose.yml)
+cp .env.example .env
+go run ./cmd/server           # API ที่ http://localhost:8080 — migrate และ seed บัญชีเดโมให้อัตโนมัติ
+go test ./...
+```
 
-โมเดลกำหนดชนิดคอลัมน์สำหรับ PostgreSQL โดยไฟล์ไบนารีใช้ `bytea` และข้อความขนาดใหญ่ใช้ `text` ส่วนฟิลด์เวลาใช้ `TimeOnly` เพื่อรับและส่ง JSON เป็น `HH:mm:ss`
+บัญชีทดสอบ: [docs/test-accounts.md](../docs/test-accounts.md)
 
-ฟิลด์ foreign key ถูกเพิ่มในโมเดลที่เป็นฝั่งลูกเพื่อให้ GORM สร้างความสัมพันธ์ได้จริง และเพิ่ม `RequirementID` ให้ `ArtistRequirement` เนื่องจากใน diagram ไม่มี primary key ของคลาสนี้ ความสัมพันธ์ Concert–Artist และ Concert–Employee เป็น many-to-many ส่วน EmpActivityLog–ModifiedHistory เป็น one-to-one
+## โครงสร้างโฟลเดอร์
 
-## ข้อมูลทดสอบฝั่งลูกค้า
+```
+cmd/
+├── server/              API server (main.go) + poster seed
+├── check-demo-data/     ตรวจข้อมูลเดโมในฐานข้อมูล
+├── seed-customer-demo/  seed ข้อมูลลูกค้า/บัตรเดโม       (go run ./cmd/seed-customer-demo --apply)
+├── seed-employees/      seed บัญชีพนักงานเดโม           (go run ./cmd/seed-employees --apply)
+├── seed-management/     seed โปรโมชั่น/พนักงานเดโม       (go run ./cmd/seed-management --apply)
+└── seed-reports/        seed ข้อมูลรายงาน               (go run ./cmd/seed-reports --apply)
+internal/
+├── access/              สิทธิ์การเข้าถึงโมดูลของพนักงาน
+├── config/              โหลด .env และเชื่อมต่อฐานข้อมูล
+├── eventregistration/   API ระบบลงทะเบียนเข้างาน
+├── handlers/            HTTP handlers ของระบบอื่น ๆ
+├── mailer/              ส่งอีเมล (SMTP หรือ log ลง console)
+├── models/              GORM models + AutoMigrate
+├── seed/                ข้อมูลเริ่มต้น (บัญชีเดโม)
+└── ticketplanning/      API ระบบวางแผนการจำหน่ายบัตร
+tests/                   integration tests ของ API
+```
 
-ดูวิธีติดตั้งบัญชี บัตร และประวัติการซื้อจำลองได้ที่ [CUSTOMER_DEMO.md](CUSTOMER_DEMO.md)
+ทุกคำสั่ง `go run ./cmd/...` ต้องรันจากโฟลเดอร์ `backend` (เครื่องมือ seed อ่าน `.env` จาก working directory)
+
+เอกสารเพิ่มเติม: [docs/backend/MANAGEMENT.md](../docs/backend/MANAGEMENT.md), [docs/backend/REPORT_DATA.md](../docs/backend/REPORT_DATA.md)

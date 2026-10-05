@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { createPortal } from 'react-dom'
-import TicketPlanningApp from './TicketPlanningApp'
-import moduleStyles from './styles.css?inline'
+import TicketPlanningApp from '@/features/ticketPlanning/TicketPlanningApp'
+import moduleStyles from '@/features/ticketPlanning/styles.css?inline'
 import Box from '@mui/material/Box'
 
 export default function TicketPlanningModule() {
