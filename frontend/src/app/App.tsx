@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Route, Routes } from 'react-router-dom'
-import ConsertReportPage from '@/ConsertReportPage'
+import ConsertReportPage from '@/features/report/pages/ConcertReport'
 
 // B6728786 - Frontend (Ticket Booking & Auth Guards)
 import LoginPage from '@/features/auth/pages/CustomerLogin'

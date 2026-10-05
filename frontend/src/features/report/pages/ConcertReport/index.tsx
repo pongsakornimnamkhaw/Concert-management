@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
-import type { ConcertItem } from '@/types/report';
-import { reportApi } from '@/api/reportApi';
-import { FinishedConcertList } from '@/components/compo_ConsertReport/FinishedConcertList';
-import { ConcertDetailReport } from '@/components/compo_ConsertReport/ConcertDetailReport';
-import { finishedConcertsData } from '@/data/concerts';
-import '@/ConsertReportPage.css';
+import type { ConcertItem } from '@/features/report/types/report';
+import { reportApi } from '@/features/report/api/reportApi';
+import { FinishedConcertList } from '@/features/report/components/FinishedConcertList';
+import { ConcertDetailReport } from '@/features/report/components/ConcertDetailReport';
+import { finishedConcertsData } from '@/features/report/data/concerts';
+import '@/features/report/pages/ConcertReport/ConcertReport.css';
 import { Box, Chip, InputAdornment, TextField, Typography } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 
