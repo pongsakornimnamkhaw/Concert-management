@@ -2,7 +2,7 @@
 
 ## Scope
 
-The four menu pages and their existing create/edit/detail routes use `frontend/src/api/managementApi.ts`. Other frontend pages, layouts, routing and API clients are unchanged. The existing server registers `RegisterManagementRoutes` alongside its original modules. No demo data is seeded by the management handlers.
+The four menu pages and their existing create/edit/detail routes use `frontend/src/features/promotion/api/managementApi.ts`. Other frontend pages, layouts, routing and API clients are unchanged. The existing server registers `RegisterManagementRoutes` alongside its original modules. No demo data is seeded by the management handlers.
 
 The backend uses its existing `.env` PostgreSQL connection (`DB_HOST`, `DB_PORT`, `DB_NAME`, `DB_USER`, `DB_PASSWORD`, `DB_SSLMODE`). Run the existing backend from `backend` with `go run ./cmd/server`, and the frontend from `frontend` with `npm run dev`. The existing Vite `/api` proxy forwards to port 8080. Existing whole-application startup/migration/seed behavior remains unchanged.
 
