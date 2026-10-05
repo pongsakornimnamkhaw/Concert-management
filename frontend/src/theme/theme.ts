@@ -1,86 +1,93 @@
-// src/theme/theme.ts
 import { createTheme } from '@mui/material/styles';
 
-export const theme = createTheme({
+const theme = createTheme({
   palette: {
     primary: {
-      main: '#d63384',
-      light: '#e85fa0',
-      dark: '#b5206a',
-      contrastText: '#ffffff',
+      main: '#1a1a2e', // dark navy blue
     },
     secondary: {
-      main: '#7c3aed',
-      light: '#9b5cf6',
-      dark: '#5b21b6',
+      main: '#e91e8c', // pink-purple
     },
-    success: { main: '#22c55e' },
-    error: { main: '#ef4444' },
-    warning: { main: '#f59e0b' },
-    background: {
-      default: '#f4f5f7',
-      paper: '#ffffff',
+    success: {
+      main: '#4caf50', // green
+    },
+    error: {
+      main: '#ef5350', // red
+    },
+    warning: {
+      main: '#ff9800', // orange
+    },
+    info: {
+      main: '#2196f3', // blue
     },
     text: {
-      primary: '#1e293b',
-      secondary: '#64748b',
+      primary: '#0d1b5e', // headings
+    },
+    background: {
+      default: '#f5f5f5',
     },
   },
   typography: {
-    fontFamily: '"Inter", "Noto Sans Thai", "Roboto", "Helvetica", sans-serif',
-    button: { textTransform: 'none', fontWeight: 600 },
-    h5: { fontWeight: 700 },
-    h6: { fontWeight: 600 },
+    fontFamily: "'Noto Sans Thai', 'Inter', sans-serif",
+    fontSize: 18,
+    h1: { fontSize: '28px', fontWeight: 'bold' },
+    h2: { fontSize: '28px', fontWeight: 'bold' },
+    h3: { fontSize: '28px', fontWeight: 'bold' },
+    h4: { fontSize: '28px', fontWeight: 'bold' },
+    h5: { fontSize: '28px', fontWeight: 'bold' },
+    h6: { fontSize: '28px', fontWeight: 'bold' },
+    subtitle1: { fontSize: '18px', fontWeight: 'bold' },
+    subtitle2: { fontSize: '14px', fontWeight: 'bold' },
+    body1: { fontSize: '18px' },
+    body2: { fontSize: '18px' },
+    button: { fontSize: '18px', textTransform: 'none' },
+    caption: { fontSize: '14px' },
+    overline: { fontSize: '14px' },
   },
-  shape: { borderRadius: 10 },
   components: {
-    MuiButton: {
-      defaultProps: { disableElevation: true },
+    MuiTypography: {
       styleOverrides: {
-        root: { borderRadius: 8, padding: '7px 20px', fontSize: '0.875rem' },
+        root: {
+          fontFamily: "'Noto Sans Thai', 'Inter', sans-serif",
+        },
       },
     },
-    MuiCard: {
-      styleOverrides: { root: { borderRadius: 12, boxShadow: '0 1px 3px rgba(0,0,0,0.08)' } },
+    MuiInputBase: {
+      styleOverrides: {
+        root: {
+          fontSize: '18px',
+        },
+      },
+    },
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          fontSize: '18px',
+        },
+      },
+    },
+    MuiTableCell: {
+      styleOverrides: {
+        root: {
+          fontSize: '18px',
+        },
+      },
+    },
+    MuiMenuItem: {
+      styleOverrides: {
+        root: {
+          fontSize: '18px',
+        },
+      },
     },
     MuiChip: {
-      styleOverrides: { root: { borderRadius: 6, fontWeight: 600, fontSize: '0.75rem' } },
-    },
-    MuiTableHead: {
       styleOverrides: {
         root: {
-          '& .MuiTableCell-root': {
-            backgroundColor: '#f8fafc',
-            fontWeight: 600,
-            color: '#64748b',
-            fontSize: '0.8rem',
-          },
+          fontSize: '14px',
         },
       },
-    },
-    MuiTableRow: {
-      styleOverrides: {
-        root: {
-          '&:last-child td': { borderBottom: 0 },
-          '&:hover': { backgroundColor: '#fdf2f8' },
-        },
-      },
-    },
-    MuiTab: {
-      styleOverrides: {
-        root: {
-          textTransform: 'none',
-          fontWeight: 600,
-          fontSize: '0.875rem',
-          minWidth: 80,
-        },
-      },
-    },
-    MuiTextField: {
-      defaultProps: { size: 'small' },
-    },
-    MuiOutlinedInput: {
-      styleOverrides: { root: { borderRadius: 8 } },
     },
   },
 });
+
+export default theme;
