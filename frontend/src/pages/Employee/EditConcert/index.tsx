@@ -30,7 +30,7 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 import CloseIcon from '@mui/icons-material/Close';
 import { concertApi, ConcertData } from '@/api/concertApi';
 import { pulse, flux, celestial, starlight } from '@/assets/poster';
-import ConfirmDeleteDialog from '@/components/common/ConfirmDeleteDialog';
+import ConfirmDeleteDialog from '@/shared/components/ConfirmDeleteDialog';
 
 const fallbackImages: Record<string, string> = {
   "CC0001": pulse,

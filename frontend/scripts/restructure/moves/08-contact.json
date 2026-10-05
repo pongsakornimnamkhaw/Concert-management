@@ -1,0 +1,14 @@
+{
+  "src/types/contact.ts": "src/features/contact/types/contact.ts",
+  "src/components/_frontend/ExternalContactLayout.tsx": "src/features/contact/components/ExternalContactLayout.tsx",
+  "src/components/_frontend/Sidebar.tsx": "src/features/contact/components/Sidebar.tsx",
+  "src/components/_frontend/StatusTimeline.tsx": "src/features/contact/components/StatusTimeline.tsx",
+  "src/pages/Customer/ContactHQ.tsx": "src/features/contact/pages/ContactHQ/index.tsx",
+  "src/pages/Customer/GeneralInquiryForm.tsx": "src/features/contact/pages/GeneralInquiryForm/index.tsx",
+  "src/pages/Customer/PlanningForm.tsx": "src/features/contact/pages/PlanningForm/index.tsx",
+  "src/pages/Customer/SponsorForm.tsx": "src/features/contact/pages/SponsorForm/index.tsx",
+  "src/pages/Customer/TicketingSupport.tsx": "src/features/contact/pages/TicketingSupport/index.tsx",
+  "src/assets/banner1.jpg": "src/assets/contact/banner1.jpg",
+  "src/assets/banner2.jpg": "src/assets/contact/banner2.jpg",
+  "src/assets/map.jpg": "src/assets/contact/map.jpg"
+}

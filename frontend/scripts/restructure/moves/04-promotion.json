@@ -1,0 +1,18 @@
+{
+  "src/api/managementApi.ts": "src/features/promotion/api/managementApi.ts",
+  "src/api/customerPromotionApi.ts": "src/features/promotion/api/customerPromotionApi.ts",
+  "src/api/customerPromotionApi.test.ts": "src/features/promotion/api/customerPromotionApi.test.ts",
+  "src/types/promotion.ts": "src/features/promotion/types/promotion.ts",
+  "src/types/customerPromotion.ts": "src/features/promotion/types/customerPromotion.ts",
+  "src/utils/customerPromotion.ts": "src/features/promotion/utils/customerPromotion.ts",
+  "src/utils/customerPromotion.test.ts": "src/features/promotion/utils/customerPromotion.test.ts",
+  "src/pages/Employee/promotions/typography.ts": "src/features/promotion/utils/typography.ts",
+  "src/components/ui/StatusBadge.tsx": "src/features/promotion/components/StatusBadge.tsx",
+  "src/pages/Employee/promotions/list/PromotionListPage.tsx": "src/features/promotion/pages/PromotionList/index.tsx",
+  "src/pages/Employee/promotions/detail/PromotionDetailPage.tsx": "src/features/promotion/pages/PromotionDetail/index.tsx",
+  "src/pages/Employee/promotions/form/PromotionFormPage.tsx": "src/features/promotion/pages/PromotionForm/index.tsx",
+  "src/pages/Employee/promotions/form/PromotionFormPage.test.tsx": "src/features/promotion/pages/PromotionForm/PromotionFormPage.test.tsx",
+  "src/pages/Employee/promotions/approval/PromotionApprovalPage.tsx": "src/features/promotion/pages/PromotionApproval/index.tsx",
+  "src/pages/Customer/Promotions": "src/features/promotion/pages/CustomerPromotions",
+  "src/pages/Customer/PromotionDetail": "src/features/promotion/pages/CustomerPromotionDetail"
+}

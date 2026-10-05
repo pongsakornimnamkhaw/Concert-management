@@ -20,7 +20,7 @@ import LocalOfferOutlinedIcon from '@mui/icons-material/LocalOfferOutlined';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import { Link as RouterLink } from 'react-router-dom';
-import CustomerHeader from '@/components/common/CustomerHeader';
+import CustomerHeader from '@/layouts/customer/CustomerHeader';
 import { customerPromotionApi } from '@/api/customerPromotionApi';
 import type { CustomerPromotion } from '@/types/customerPromotion';
 import { discountLabel, formatThaiDate, isExpiringSoon } from '@/utils/customerPromotion';

@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { saveEmployeeSession } from '@/utils/employeeSession';
-import Sidebar from '@/components/layout/Sidebar';
+import Sidebar from '@/layouts/backoffice/Sidebar';
 
 vi.mock('@/api/employeeAccountApi', () => ({
   employeeAccountApi: { getPendingResetCount: vi.fn().mockResolvedValue(0) },

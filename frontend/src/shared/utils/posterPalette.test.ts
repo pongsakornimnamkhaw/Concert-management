@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { POSTER_THEMES, posterIndexForConcertId, ticketThemeForConcertId } from '@/utils/posterPalette';
+import { POSTER_THEMES, posterIndexForConcertId, ticketThemeForConcertId } from '@/shared/utils/posterPalette';
 
 describe('ticketThemeForConcertId', () => {
     it('always gives the same concert the same colours', () => {

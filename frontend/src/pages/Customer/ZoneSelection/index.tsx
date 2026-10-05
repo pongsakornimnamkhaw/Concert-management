@@ -1,6 +1,6 @@
 import { Box, Typography, Container, Link, IconButton, Paper, Stepper, Step, StepLabel, CircularProgress } from '@mui/material';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import Logo from '@/components/common/Logo';
+import Logo from '@/shared/components/Logo';
 import { useNavigate, Link as RouterLink, useParams } from 'react-router-dom';
 import { useEffect, useMemo, useState } from 'react';
 import { customerPromotionApi } from '@/api/customerPromotionApi';
@@ -9,7 +9,7 @@ import { seatInventoryApi, type PlanningLayout, type ZoneInventory } from '@/api
 import type { EventData } from '@/components/SeatSelection/types';
 import CustomerLayoutCanvas from '@/components/SeatSelection/CustomerLayoutCanvas';
 import { zoneDisplayState } from '@/components/SeatSelection/customerSeatState';
-import { ErrorAlert } from '@/components/ErrorAlert';
+import { ErrorAlert } from '@/shared/components/ErrorAlert';
 import { posterForConcert } from '@/utils/customerConcertCard';
 
 const steps = ['เลือกโซนบัตร', 'เลือกที่นั่ง', 'ชำระเงิน'];

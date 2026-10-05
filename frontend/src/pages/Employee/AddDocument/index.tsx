@@ -25,7 +25,7 @@ import {
   Delete as DeleteIcon
 } from '@mui/icons-material';
 import { concertApi, ConcertData, DocumentItem } from '@/api/concertApi';
-import ConfirmDeleteDialog from '@/components/common/ConfirmDeleteDialog';
+import ConfirmDeleteDialog from '@/shared/components/ConfirmDeleteDialog';
 import { useModuleAccess } from '@/access/useModuleAccess';
 import { useLocation } from 'react-router-dom';
 

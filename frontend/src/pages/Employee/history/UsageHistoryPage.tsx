@@ -22,7 +22,7 @@ import TableRow from '@mui/material/TableRow';
 import SearchIcon from '@mui/icons-material/Search';
 
 import { managementApi } from '@/api/managementApi';
-import Pagination from '@/components/ui/Pagination';
+import Pagination from '@/shared/components/Pagination';
 import type { ActivityLog } from '@/types/promotion';
 
 type HistoryLog = ActivityLog & { target_id?: string };

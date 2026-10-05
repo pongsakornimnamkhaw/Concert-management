@@ -34,9 +34,9 @@ import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import { managementApi } from '@/api/managementApi';
 import type { Promotion } from '@/types/promotion';
 import StatusBadge from '@/components/ui/StatusBadge';
-import Pagination from '@/components/ui/Pagination';
+import Pagination from '@/shared/components/Pagination';
 import { useNavigate, useParams } from 'react-router-dom';
-import ConfirmDeleteDialog from '@/components/common/ConfirmDeleteDialog';
+import ConfirmDeleteDialog from '@/shared/components/ConfirmDeleteDialog';
 import { useModuleAccess } from '@/access/useModuleAccess';
 
 const PAGE_SIZE = 5;

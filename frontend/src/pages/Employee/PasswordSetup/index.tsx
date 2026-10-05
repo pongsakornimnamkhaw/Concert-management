@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Alert, Box, Button, IconButton, InputAdornment, Paper, Stack, TextField, Typography } from '@mui/material';
 import { Visibility, VisibilityOff } from '@mui/icons-material';
 import { Navigate, useNavigate } from 'react-router-dom';
-import Logo from '@/components/common/Logo';
+import Logo from '@/shared/components/Logo';
 import { employeeAuthApi, EMPLOYEE_SETUP_TOKEN_KEY } from '@/api/employeeAuthApi';
 
 export default function EmployeePasswordSetupPage() {

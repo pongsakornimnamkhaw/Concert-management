@@ -1,5 +1,5 @@
 import { Box, Paper, Typography, Link, Stack } from '@mui/material'
-import Logo from '@/components/common/Logo'
+import Logo from '@/shared/components/Logo'
 import LoginForm from '@/components/common/LoginForm'
 import { Link as RouterLink } from 'react-router-dom'
 

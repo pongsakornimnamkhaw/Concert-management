@@ -9,7 +9,7 @@ import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import CheckIcon from '@mui/icons-material/Check';
 import { useNavigate } from 'react-router-dom';
 import { celestial, flux, pulse, starlight } from '@/assets/poster';
-import ConfirmDeleteDialog from '@/components/common/ConfirmDeleteDialog';
+import ConfirmDeleteDialog from '@/shared/components/ConfirmDeleteDialog';
 import { useModuleAccess } from '@/access/useModuleAccess';
 
 const statusOptions = [

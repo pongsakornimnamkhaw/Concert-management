@@ -1,5 +1,5 @@
 import { Box, Paper, Typography } from '@mui/material'
-import Logo from '@/components/common/Logo'
+import Logo from '@/shared/components/Logo'
 import ResetPasswordForm from '@/components/common/ResetPasswordForm'
 
 const ResetPasswordPage = () => {

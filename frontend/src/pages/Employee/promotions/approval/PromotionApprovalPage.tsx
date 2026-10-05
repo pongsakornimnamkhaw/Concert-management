@@ -36,7 +36,7 @@ import ClearIcon from '@mui/icons-material/Clear';
 
 import { managementApi } from '@/api/managementApi';
 import type { Promotion, PromotionApproval } from '@/types/promotion';
-import Pagination from '@/components/ui/Pagination';
+import Pagination from '@/shared/components/Pagination';
 import { useNavigate } from 'react-router-dom';
 import { promotionFontSizes, promotionPageSx, promotionTitleSx } from '@/pages/Employee/promotions/typography';
 import { useModuleAccess } from '@/access/useModuleAccess';

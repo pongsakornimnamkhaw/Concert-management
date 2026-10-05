@@ -29,7 +29,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import { managementApi } from '@/api/managementApi';
 import type { DiscountType, Concert, Zone } from '@/types/promotion';
 import { useNavigate, useParams } from 'react-router-dom';
-import ConfirmDeleteDialog from '@/components/common/ConfirmDeleteDialog';
+import ConfirmDeleteDialog from '@/shared/components/ConfirmDeleteDialog';
 import { useModuleAccess } from '@/access/useModuleAccess';
 
 interface FormState {

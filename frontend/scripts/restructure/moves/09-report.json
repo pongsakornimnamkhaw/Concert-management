@@ -1,0 +1,12 @@
+{
+  "src/api/reportApi.ts": "src/features/report/api/reportApi.ts",
+  "src/types/report.ts": "src/features/report/types/report.ts",
+  "src/data/concerts.ts": "src/features/report/data/concerts.ts",
+  "src/components/compo_ConsertReport": "src/features/report/components",
+  "src/ConsertReportPage.tsx": "src/features/report/pages/ConcertReport/index.tsx",
+  "src/ConsertReportPage.css": "src/features/report/pages/ConcertReport/ConcertReport.css",
+  "src/assets/poster_celestial.jpg": "src/assets/report/poster_celestial.jpg",
+  "src/assets/poster_flux.jpg": "src/assets/report/poster_flux.jpg",
+  "src/assets/poster_pulse_live.jpg": "src/assets/report/poster_pulse_live.jpg",
+  "src/assets/poster_starlight.jpg": "src/assets/report/poster_starlight.jpg"
+}

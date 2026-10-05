@@ -1,5 +1,5 @@
 import { Box } from '@mui/material';
-import CustomerHeader from '@/components/common/CustomerHeader';
+import CustomerHeader from '@/layouts/customer/CustomerHeader';
 import EventList from '@/components/posterShow/posterShow';
 import { useSearchParams } from 'react-router-dom';
 

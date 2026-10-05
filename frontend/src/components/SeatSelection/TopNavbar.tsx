@@ -3,7 +3,7 @@ import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 // import SearchIcon from '@mui/icons-material/Search';
 // import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import TimerIcon from '@mui/icons-material/Timer';
-import Logo from '@/components/common/Logo';
+import Logo from '@/shared/components/Logo';
 import { Link as RouterLink } from 'react-router-dom';
 import { formatTime } from '@/components/SeatSelection/constants';
 

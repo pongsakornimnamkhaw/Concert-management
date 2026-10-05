@@ -9,7 +9,7 @@ import LocalOfferOutlinedIcon from '@mui/icons-material/LocalOfferOutlined';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PaidIcon from '@mui/icons-material/Paid';
 import { Link as RouterLink, useNavigate, useParams } from 'react-router-dom';
-import CustomerHeader from '@/components/common/CustomerHeader';
+import CustomerHeader from '@/layouts/customer/CustomerHeader';
 import { customerPromotionApi } from '@/api/customerPromotionApi';
 import type { CustomerPromotion, CustomerPromotionConcert } from '@/types/customerPromotion';
 import { celestial, flux, pulse, starlight } from '@/assets/poster';

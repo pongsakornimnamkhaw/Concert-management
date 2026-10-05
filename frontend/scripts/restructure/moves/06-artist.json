@@ -1,0 +1,14 @@
+{
+  "src/api/artistApi.ts": "src/features/artist/api/artistApi.ts",
+  "src/utils/scheduleRules.ts": "src/features/artist/utils/scheduleRules.ts",
+  "src/pages/Employee/ArtistDashboard": "src/features/artist/pages/ArtistDashboard",
+  "src/pages/Employee/ArtistDetail": "src/features/artist/pages/ArtistDetail",
+  "src/pages/Employee/ArtistEditHistory": "src/features/artist/pages/ArtistEditHistory",
+  "src/pages/Employee/ArtistInfo": "src/features/artist/pages/ArtistInfo",
+  "src/pages/Employee/ArtistInvitation": "src/features/artist/pages/ArtistInvitation",
+  "src/pages/Employee/ArtistRequirement": "src/features/artist/pages/ArtistRequirement",
+  "src/pages/Employee/ArtistSearch": "src/features/artist/pages/ArtistSearch",
+  "src/pages/Employee/PerfomanceSchedule": "src/features/artist/pages/PerformanceSchedule",
+  "src/pages/Employee/PerfomanceDetail": "src/features/artist/pages/PerformanceDetail",
+  "src/pages/Employee/EditPerfomance": "src/features/artist/pages/EditPerformance"
+}

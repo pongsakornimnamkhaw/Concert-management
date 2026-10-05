@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import type { CustomerPromotionConcert } from '@/types/customerPromotion';
 import { formatThaiDateRange } from '@/utils/customerPromotion';
 import { posterForConcert, toCustomerEvent } from '@/utils/customerConcertCard';
-import { ticketThemeForConcertId } from '@/utils/posterPalette';
+import { ticketThemeForConcertId } from '@/shared/utils/posterPalette';
 
 const makeConcert = (overrides: Partial<CustomerPromotionConcert> = {}): CustomerPromotionConcert => ({
     concert_id: 'CC0001',

@@ -28,7 +28,7 @@ import dayjs, { Dayjs } from 'dayjs';
 import { concertApi, ConcertData } from '@/api/concertApi';
 import { artistApi, type ArtistData } from '@/api/artistApi';
 import { concertDateOptions, validateScheduleRows } from '@/utils/scheduleRules';
-import ConfirmDeleteDialog from '@/components/common/ConfirmDeleteDialog';
+import ConfirmDeleteDialog from '@/shared/components/ConfirmDeleteDialog';
 
 export interface ScheduleRow {
   id: number | string;

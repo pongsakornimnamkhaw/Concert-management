@@ -12,7 +12,7 @@ import {
 } from '@mui/material';
 import { Visibility, VisibilityOff, BadgeOutlined, ArrowBack } from '@mui/icons-material';
 import { Navigate, useNavigate, useSearchParams, Link as RouterLink } from 'react-router-dom';
-import Logo from '@/components/common/Logo';
+import Logo from '@/shared/components/Logo';
 import { employeeAuthApi } from '@/api/employeeAuthApi';
 import { saveEmployeeSession } from '@/utils/employeeSession';
 import { getCustomerSession } from '@/utils/customerSession';

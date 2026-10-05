@@ -12,7 +12,7 @@ import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import CalendarMonthOutlinedIcon from '@mui/icons-material/CalendarMonthOutlined';
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 import CloudUploadOutlinedIcon from '@mui/icons-material/CloudUploadOutlined';
-import CustomerHeader from '@/components/common/CustomerHeader';
+import CustomerHeader from '@/layouts/customer/CustomerHeader';
 import {
   CustomerApiError, customerAccountApi,
   type CustomerAccount, type CustomerProfileInput,
@@ -26,7 +26,7 @@ import {
 import { bookingPaymentApi } from '@/api/bookingPaymentApi';
 import CustomerTicketCard, { type CustomerTicketPreview } from '@/components/tickets/CustomerTicketCard';
 import { TicketDesignRenderer, type TicketDesignSide } from '@/components/tickets/TicketDesignRenderer';
-import { ticketThemeForConcertId } from '@/utils/posterPalette';
+import { ticketThemeForConcertId } from '@/shared/utils/posterPalette';
 
 type AccountPageMode = 'tickets' | 'history' | 'profile' | 'password';
 

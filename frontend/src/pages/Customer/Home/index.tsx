@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 import Slide from '@/components/slide/Slide';
 import EventList from '@/components/posterShow/posterShow';
-import CustomerHeader from '@/components/common/CustomerHeader';
+import CustomerHeader from '@/layouts/customer/CustomerHeader';
 import { pulse, celestial } from '@/assets/poster';
 
 const comingSoonPosters = [

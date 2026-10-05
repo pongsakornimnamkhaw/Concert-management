@@ -5,7 +5,7 @@ import { MemoryRouter } from 'react-router-dom';
 import { customerAccountApi, CustomerApiError } from '@/api/customerAccountApi';
 import { customerPromotionApi } from '@/api/customerPromotionApi';
 import type { CustomerPromotionConcert } from '@/types/customerPromotion';
-import CustomerHeader from '@/components/common/CustomerHeader';
+import CustomerHeader from '@/layouts/customer/CustomerHeader';
 
 const concert = (id: string, name: string, location: string): CustomerPromotionConcert => ({
     concert_id: id,

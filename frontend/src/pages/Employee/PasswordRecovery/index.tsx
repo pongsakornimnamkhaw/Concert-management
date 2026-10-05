@@ -20,7 +20,7 @@ import {
   ArrowBack,
 } from '@mui/icons-material';
 import { useNavigate, Link as RouterLink } from 'react-router-dom';
-import Logo from '@/components/common/Logo';
+import Logo from '@/shared/components/Logo';
 import {
   employeeAccountApi,
   EMPLOYEE_RESET_TOKEN_KEY,

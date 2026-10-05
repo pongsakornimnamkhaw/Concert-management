@@ -22,7 +22,7 @@ import CustomerPromotionDetailPage from '@/pages/Customer/PromotionDetail'
 import SalesBookingManagementPage from '@/pages/Employee/SalesBookingManagement'
 
 // B6707651 - Frontend (Concert Management)
-import Layout from '@/components/layout/Layout'
+import Layout from '@/layouts/backoffice/Layout'
 import DashboardPage from '@/pages/Employee/ConcertDashBoard'
 import AddConcertPage from '@/pages/Employee/AddConcert'
 import EditConcertPage from '@/pages/Employee/EditConcert'
@@ -48,7 +48,7 @@ import VenueSeatsViewPage from '@/pages/Customer/VenueSeatsView'
 import RegistrationModule from '@/features/eventRegistration/EventRegistrationModule'
 
 // B6717537 - Frontend (Promotions & Employees)
-import PromotionLayout from '@/components/layout/PromotionLayout'
+import PromotionLayout from '@/layouts/backoffice/PromotionLayout'
 import PromotionListPage from '@/pages/Employee/promotions/list/PromotionListPage'
 import PromotionDetailPage from '@/pages/Employee/promotions/detail/PromotionDetailPage'
 import PromotionFormPage from '@/pages/Employee/promotions/form/PromotionFormPage'

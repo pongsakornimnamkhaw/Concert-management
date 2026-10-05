@@ -23,7 +23,7 @@ import OrderSummary from '@/components/SeatSelection/OrderSummary';
 import QRCodeDialog from '@/components/SeatSelection/dialogs/QRCodeDialog';
 import SuccessDialog from '@/components/SeatSelection/dialogs/SuccessDialog';
 import ExpiredDialog from '@/components/SeatSelection/dialogs/ExpiredDialog';
-import { ErrorAlert } from '@/components/ErrorAlert';
+import { ErrorAlert } from '@/shared/components/ErrorAlert';
 
 const SeatSelectionPage = () => {
     const navigate = useNavigate();

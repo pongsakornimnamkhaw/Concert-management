@@ -23,7 +23,7 @@ import Typography from '@mui/material/Typography';
 
 import type { ResetRequestItem } from '@/api/employeeAccountApi';
 import { employeeAccountApi } from '@/api/employeeAccountApi';
-import Pagination from '@/components/ui/Pagination';
+import Pagination from '@/shared/components/Pagination';
 
 const bangkokFmt = new Intl.DateTimeFormat('th-TH', {
   timeZone: 'Asia/Bangkok',

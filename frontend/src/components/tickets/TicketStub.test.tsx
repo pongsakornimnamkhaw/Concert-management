@@ -2,7 +2,7 @@ import { describe, expect, it, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import TicketStub from '@/components/tickets/TicketStub';
-import { ticketThemeForConcertId } from '@/utils/posterPalette';
+import { ticketThemeForConcertId } from '@/shared/utils/posterPalette';
 
 const ticketProps = {
     concertId: 'CC0001',

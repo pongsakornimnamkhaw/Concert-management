@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material';
-import { ticketThemeForConcertId } from '@/utils/posterPalette';
+import { ticketThemeForConcertId } from '@/shared/utils/posterPalette';
 
 export interface TicketStubProps {
   concertId: string;

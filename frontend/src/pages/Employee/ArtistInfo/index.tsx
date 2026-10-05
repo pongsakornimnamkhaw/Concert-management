@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Box, Typography, TextField, Button, Paper, Grid, Select, MenuItem, FormControl, Radio, RadioGroup, FormControlLabel } from '@mui/material';
 import { artistApi, type ArtistData } from '@/api/artistApi';
-import ConfirmDeleteDialog from '@/components/common/ConfirmDeleteDialog';
+import ConfirmDeleteDialog from '@/shared/components/ConfirmDeleteDialog';
 import { useSearchParams } from 'react-router-dom';
 
 const ArtistInfoPage = () => {

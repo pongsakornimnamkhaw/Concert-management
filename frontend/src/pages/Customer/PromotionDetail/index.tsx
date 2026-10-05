@@ -19,7 +19,7 @@ import ContentCopyRoundedIcon from '@mui/icons-material/ContentCopyRounded';
 import LocalOfferOutlinedIcon from '@mui/icons-material/LocalOfferOutlined';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import { Link as RouterLink, useParams } from 'react-router-dom';
-import CustomerHeader from '@/components/common/CustomerHeader';
+import CustomerHeader from '@/layouts/customer/CustomerHeader';
 import { customerPromotionApi } from '@/api/customerPromotionApi';
 import type { CustomerPromotion } from '@/types/customerPromotion';
 import { discountLabel, formatThaiDate } from '@/utils/customerPromotion';
