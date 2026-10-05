@@ -9,8 +9,8 @@ import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Typography from '@mui/material/Typography';
-import type { EmployeeActivity } from '@/api/employeeAccountApi';
-import { employeeAccountApi } from '@/api/employeeAccountApi';
+import type { EmployeeActivity } from '@/features/userManagement/api/employeeAccountApi';
+import { employeeAccountApi } from '@/features/userManagement/api/employeeAccountApi';
 import Pagination from '@/shared/components/Pagination';
 
 const bangkokFmt = new Intl.DateTimeFormat('th-TH', {

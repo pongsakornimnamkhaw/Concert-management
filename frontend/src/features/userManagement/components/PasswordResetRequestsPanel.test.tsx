@@ -1,15 +1,15 @@
 import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import PasswordResetRequestsPanel from '@/pages/Employee/employees/PasswordResetRequestsPanel';
-import type { ResetRequestPage } from '@/api/employeeAccountApi';
+import PasswordResetRequestsPanel from '@/features/userManagement/components/PasswordResetRequestsPanel';
+import type { ResetRequestPage } from '@/features/userManagement/api/employeeAccountApi';
 
 const { getResetRequests, decideResetRequest } = vi.hoisted(() => ({
   getResetRequests: vi.fn(),
   decideResetRequest: vi.fn(),
 }));
 
-vi.mock('@/api/employeeAccountApi', () => ({
+vi.mock('@/features/userManagement/api/employeeAccountApi', () => ({
   employeeAccountApi: {
     getResetRequests,
     decideResetRequest,

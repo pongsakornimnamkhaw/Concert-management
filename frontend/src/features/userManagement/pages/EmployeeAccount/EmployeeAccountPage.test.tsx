@@ -2,8 +2,8 @@ import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { MemoryRouter } from 'react-router-dom';
-import EmployeeAccountPage from '@/pages/Employee/Account/index';
-import type { EmployeeProfile, EmployeeActivityPage } from '@/api/employeeAccountApi';
+import EmployeeAccountPage from '@/features/userManagement/pages/EmployeeAccount/index';
+import type { EmployeeProfile, EmployeeActivityPage } from '@/features/userManagement/api/employeeAccountApi';
 import type { PersonnelType } from '@/types/promotion';
 
 // ─── mock API ────────────────────────────────────────────────────────────────
@@ -14,7 +14,7 @@ const { getProfile, updateProfile, updatePassword, getActivity } = vi.hoisted(()
   getActivity: vi.fn(),
 }));
 
-vi.mock('@/api/employeeAccountApi', () => ({
+vi.mock('@/features/userManagement/api/employeeAccountApi', () => ({
   employeeAccountApi: { getProfile, updateProfile, updatePassword, getActivity },
 }));
 

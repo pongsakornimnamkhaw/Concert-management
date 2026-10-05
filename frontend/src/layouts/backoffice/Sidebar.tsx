@@ -23,7 +23,7 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import logoImage from '@/assets/logo/octavia-logo.png';
 import { getEmployeeSession, clearEmployeeSession, EMPLOYEE_SESSION_EVENT } from '@/features/auth/utils/employeeSession';
 import { effectiveFeatureAccess, effectiveModulePermissions, hasModuleAccess, type BackofficeFeature, type BackofficeModule } from '@/features/auth/access/backofficeAccess';
-import { employeeAccountApi } from '@/api/employeeAccountApi';
+import { employeeAccountApi } from '@/features/userManagement/api/employeeAccountApi';
 import { employeeAuthApi } from '@/features/auth/api/employeeAuthApi';
 
 import { useLocation, useNavigate } from 'react-router-dom';

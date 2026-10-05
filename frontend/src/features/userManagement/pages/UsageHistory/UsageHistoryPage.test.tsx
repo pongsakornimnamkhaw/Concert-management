@@ -1,7 +1,7 @@
 import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
-import UsageHistoryPage from '@/pages/Employee/history/UsageHistoryPage';
+import UsageHistoryPage from '@/features/userManagement/pages/UsageHistory';
 
 const { activityLogs } = vi.hoisted(() => ({ activityLogs: vi.fn() }));
 

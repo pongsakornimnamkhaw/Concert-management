@@ -3,7 +3,7 @@ import {
   EmployeeApiError,
   employeeAccountApi,
   EMPLOYEE_RESET_TOKEN_KEY,
-} from '@/api/employeeAccountApi';
+} from '@/features/userManagement/api/employeeAccountApi';
 
 // ─── helpers ────────────────────────────────────────────────────────────────
 

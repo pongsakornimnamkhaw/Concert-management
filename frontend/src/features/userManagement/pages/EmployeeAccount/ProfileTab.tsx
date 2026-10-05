@@ -5,8 +5,8 @@ import Button from '@mui/material/Button';
 import CircularProgress from '@mui/material/CircularProgress';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
-import type { EmployeeProfile } from '@/api/employeeAccountApi';
-import { employeeAccountApi } from '@/api/employeeAccountApi';
+import type { EmployeeProfile } from '@/features/userManagement/api/employeeAccountApi';
+import { employeeAccountApi } from '@/features/userManagement/api/employeeAccountApi';
 import { saveEmployeeSession } from '@/features/auth/utils/employeeSession';
 
 interface Props {

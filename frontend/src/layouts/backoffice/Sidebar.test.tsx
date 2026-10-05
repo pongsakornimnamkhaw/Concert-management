@@ -4,7 +4,7 @@ import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { saveEmployeeSession } from '@/features/auth/utils/employeeSession';
 import Sidebar from '@/layouts/backoffice/Sidebar';
 
-vi.mock('@/api/employeeAccountApi', () => ({
+vi.mock('@/features/userManagement/api/employeeAccountApi', () => ({
   employeeAccountApi: { getPendingResetCount: vi.fn().mockResolvedValue(0) },
 }));
 

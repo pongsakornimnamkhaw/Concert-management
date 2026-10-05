@@ -25,7 +25,7 @@ import {
   employeeAccountApi,
   EMPLOYEE_RESET_TOKEN_KEY,
   EmployeeApiError,
-} from '@/api/employeeAccountApi';
+} from '@/features/userManagement/api/employeeAccountApi';
 
 type RecoveryStep = 'request' | 'waiting' | 'reset' | 'completed';
 

@@ -9,8 +9,8 @@ const { createResetRequest, getResetStatus, completeReset } = vi.hoisted(() => (
   completeReset: vi.fn(),
 }));
 
-vi.mock('@/api/employeeAccountApi', async (importOriginal) => {
-  const actual = await importOriginal<typeof import('@/api/employeeAccountApi')>();
+vi.mock('@/features/userManagement/api/employeeAccountApi', async (importOriginal) => {
+  const actual = await importOriginal<typeof import('@/features/userManagement/api/employeeAccountApi')>();
   return {
     ...actual,
     employeeAccountApi: {

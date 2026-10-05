@@ -5,7 +5,7 @@ import Button from '@mui/material/Button';
 import CircularProgress from '@mui/material/CircularProgress';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
-import { employeeAccountApi } from '@/api/employeeAccountApi';
+import { employeeAccountApi } from '@/features/userManagement/api/employeeAccountApi';
 
 export default function SecurityTab() {
   const [currentPassword, setCurrentPassword] = useState('');

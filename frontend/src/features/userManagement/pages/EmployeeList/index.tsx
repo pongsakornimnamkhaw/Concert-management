@@ -32,7 +32,7 @@ import type { Employee, EmployeePermission } from '@/types/promotion';
 import { managementApi } from '@/api/managementApi';
 import { getEmployeeSession } from '@/features/auth/utils/employeeSession';
 import Pagination from '@/shared/components/Pagination';
-import PasswordResetRequestsPanel from '@/pages/Employee/employees/PasswordResetRequestsPanel';
+import PasswordResetRequestsPanel from '@/features/userManagement/components/PasswordResetRequestsPanel';
 import { useNavigate } from 'react-router-dom';
 
 export default function EmployeeListPage() {

@@ -6,11 +6,11 @@ import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';
 import Typography from '@mui/material/Typography';
 import Alert from '@mui/material/Alert';
-import type { EmployeeProfile } from '@/api/employeeAccountApi';
-import { employeeAccountApi } from '@/api/employeeAccountApi';
-import ProfileTab from '@/pages/Employee/Account/ProfileTab';
-import SecurityTab from '@/pages/Employee/Account/SecurityTab';
-import ActivityTab from '@/pages/Employee/Account/ActivityTab';
+import type { EmployeeProfile } from '@/features/userManagement/api/employeeAccountApi';
+import { employeeAccountApi } from '@/features/userManagement/api/employeeAccountApi';
+import ProfileTab from '@/features/userManagement/pages/EmployeeAccount/ProfileTab';
+import SecurityTab from '@/features/userManagement/pages/EmployeeAccount/SecurityTab';
+import ActivityTab from '@/features/userManagement/pages/EmployeeAccount/ActivityTab';
 
 export default function EmployeeAccountPage() {
   const [tab, setTab] = useState(0);
