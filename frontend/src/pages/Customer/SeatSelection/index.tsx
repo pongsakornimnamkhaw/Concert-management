@@ -12,7 +12,7 @@ import { calculateDiscount, filterEligiblePromotions, type PromotionOrder } from
 import { bookingPaymentApi } from '@/api/bookingPaymentApi';
 import { seatInventoryApi, SeatHoldConflictError, type PlanningLayout } from '@/api/seatInventoryApi';
 import { getCustomerSession } from '@/features/auth/utils/customerSession';
-import { posterForConcert } from '@/utils/customerConcertCard';
+import { posterForConcert } from '@/features/concert/utils/customerConcertCard';
 
 // Sub-components
 import TopNavbar from '@/components/SeatSelection/TopNavbar';

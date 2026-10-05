@@ -15,7 +15,7 @@ import {
 import NotificationsNoneRoundedIcon from '@mui/icons-material/NotificationsNoneRounded';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import { useNavigate } from 'react-router-dom';
-import { customerEvents } from '@/data/customerEvents';
+import { customerEvents } from '@/features/concert/data/customerEvents';
 
 const STORAGE_KEY = 'octavia-customer-read-concerts-ui-v1';
 

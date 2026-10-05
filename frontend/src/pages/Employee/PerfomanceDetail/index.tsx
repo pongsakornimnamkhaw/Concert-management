@@ -12,7 +12,7 @@ import {
 } from '@mui/material';
 import { artistApi, type ArtistData } from '@/api/artistApi';
 import type { PerformanceScheduleData } from '@/api/artistApi';
-import { concertApi, type ConcertData } from '@/api/concertApi';
+import { concertApi, type ConcertData } from '@/features/concert/api/concertApi';
 
 const PerformanceDetailPage = () => {
   const [concerts, setConcerts] = useState<ConcertData[]>([]);

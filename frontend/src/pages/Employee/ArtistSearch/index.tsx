@@ -10,7 +10,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { artistApi, type ArtistData, type PerformanceScheduleData } from '@/api/artistApi';
-import { concertApi, type ConcertData } from '@/api/concertApi';
+import { concertApi, type ConcertData } from '@/features/concert/api/concertApi';
 import ConfirmDeleteDialog from '@/shared/components/ConfirmDeleteDialog';
 
 const normalize = (value: string) => value.trim().toLocaleLowerCase('th');

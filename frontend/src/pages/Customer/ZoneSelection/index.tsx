@@ -10,7 +10,7 @@ import type { EventData } from '@/components/SeatSelection/types';
 import CustomerLayoutCanvas from '@/components/SeatSelection/CustomerLayoutCanvas';
 import { zoneDisplayState } from '@/components/SeatSelection/customerSeatState';
 import { ErrorAlert } from '@/shared/components/ErrorAlert';
-import { posterForConcert } from '@/utils/customerConcertCard';
+import { posterForConcert } from '@/features/concert/utils/customerConcertCard';
 
 const steps = ['เลือกโซนบัตร', 'เลือกที่นั่ง', 'ชำระเงิน'];
 

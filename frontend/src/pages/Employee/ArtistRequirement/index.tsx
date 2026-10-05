@@ -14,7 +14,7 @@ import { TimePicker } from '@mui/x-date-pickers/TimePicker';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import dayjs, { type Dayjs } from 'dayjs';
-import { concertApi, ConcertData } from '@/api/concertApi';
+import { concertApi, ConcertData } from '@/features/concert/api/concertApi';
 import { artistApi, type ArtistData } from '@/api/artistApi';
 import { concertDateOptions, validateScheduleRows } from '@/utils/scheduleRules';
 
