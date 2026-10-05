@@ -20,14 +20,40 @@ if (!mappingFile) {
 const mapping = JSON.parse(fs.readFileSync(mappingFile, 'utf8'))
 const remap = buildRemapper(mapping)
 
+// On Windows an editor/file watcher can hold a directory open, so renaming the directory
+// fails with "Permission denied" even though its files can be moved one by one.
+function gitMove(from, to) {
+  try {
+    execFileSync('git', ['mv', from, to], { stdio: 'pipe' })
+    return
+  } catch (error) {
+    if (!fs.statSync(from).isDirectory()) throw error
+  }
+  const tracked = execFileSync('git', ['ls-files', '-z', '--', from], { encoding: 'utf8' })
+    .split('\0')
+    .filter(Boolean)
+  for (const file of tracked) {
+    const target = path.posix.join(to, path.posix.relative(from, file))
+    fs.mkdirSync(path.dirname(target), { recursive: true })
+    execFileSync('git', ['mv', file, target], { stdio: 'pipe' })
+  }
+  fs.rmSync(from, { recursive: true, force: true, maxRetries: 3 })
+}
+
 if (!rewriteOnly) {
+  const pending = []
   for (const [from, to] of Object.entries(mapping)) {
+    if (!fs.existsSync(from) && fs.existsSync(to)) {
+      console.log(`skip (already moved): ${from}`)
+      continue
+    }
     if (!fs.existsSync(from)) throw new Error(`source does not exist: ${from}`)
     if (fs.existsSync(to)) throw new Error(`target already exists: ${to}`)
+    pending.push([from, to])
   }
-  for (const [from, to] of Object.entries(mapping)) {
+  for (const [from, to] of pending) {
     fs.mkdirSync(path.dirname(to), { recursive: true })
-    execFileSync('git', ['mv', from, to], { stdio: 'inherit' })
+    gitMove(from, to)
   }
 }
 

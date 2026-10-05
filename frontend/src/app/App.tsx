@@ -14,12 +14,12 @@ import HomePage from '@/features/concert/pages/Home'
 import EventsPage from '@/features/concert/pages/Events'
 import IntroPage from '@/features/concert/pages/Intro'
 import EventDetailPage from '@/features/concert/pages/EventDetail'
-import ZoneSelectionPage from '@/pages/Customer/ZoneSelection'
-import SeatSelectionPage from '@/pages/Customer/SeatSelection'
-import CustomerAccountPage from '@/pages/Customer/Account'
+import ZoneSelectionPage from '@/features/booking/pages/ZoneSelection'
+import SeatSelectionPage from '@/features/booking/pages/SeatSelection'
+import CustomerAccountPage from '@/features/booking/pages/CustomerAccount'
 import CustomerPromotionsPage from '@/features/promotion/pages/CustomerPromotions'
 import CustomerPromotionDetailPage from '@/features/promotion/pages/CustomerPromotionDetail'
-import SalesBookingManagementPage from '@/pages/Employee/SalesBookingManagement'
+import SalesBookingManagementPage from '@/features/booking/pages/SalesBookingManagement'
 
 // B6707651 - Frontend (Concert Management)
 import Layout from '@/layouts/backoffice/Layout'
@@ -43,7 +43,7 @@ import ArtistEditHistoryPage from '@/features/artist/pages/ArtistEditHistory'
 import ArtistSearchPage from '@/features/artist/pages/ArtistSearch'
 import ArtistDetailPage from '@/features/artist/pages/ArtistDetail'
 
-import VenueSeatsViewPage from '@/pages/Customer/VenueSeatsView'
+import VenueSeatsViewPage from '@/features/booking/pages/VenueSeatsView'
 
 import RegistrationModule from '@/features/eventRegistration/EventRegistrationModule'
 
