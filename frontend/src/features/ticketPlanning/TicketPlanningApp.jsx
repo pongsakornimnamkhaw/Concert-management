@@ -371,6 +371,16 @@ function arrangeSeats(count, shape, oldSeats = []) {
   })
 }
 
+function PriceInput({ value, onChange }) {
+  const [text, setText] = useState(value ? String(value) : '')
+  const handleChange = e => {
+    const next = e.target.value.replace(/^0+(?=\d)/, '')
+    setText(next)
+    onChange(Number(next))
+  }
+  return <input type="number" min="0" step="0.01" placeholder="0" value={text} onChange={handleChange}/>
+}
+
 function ItemModal({ kind, shape, onClose, onSave }) {
   const isZone = kind === 'zone'
   const [item, setItem] = useState({ id: `${kind}-${Date.now()}`, kind, shape, name: isZone ? '' : 'วัตถุ', color: isZone ? '#e72d70' : '#777b91', textColor: '#ffffff', seats: 0, seatItems: [], zonePrice: 0, type: '', x: 50, y: 50, width: 13, height: 15, rotation: 0, z: 0 })
@@ -380,7 +390,7 @@ function ItemModal({ kind, shape, onClose, onSave }) {
     <div className="form-grid">
       <FormField label={isZone ? 'ชื่อโซน' : 'ชื่อวัตถุ'} required><input value={item.name} onChange={e => update('name', e.target.value)} placeholder={isZone ? 'เช่น A1' : 'เช่น เวที หรือ ทางเข้า'}/></FormField>
       <FormField label="สี" required><input className="color-input" type="color" value={item.color} onChange={e => update('color', e.target.value)}/></FormField>
-      {isZone && <FormField label="ราคาโซน (บาท)" required><input type="number" min="0" step="0.01" value={item.zonePrice} onChange={e => update('zonePrice', Number(e.target.value))}/></FormField>}
+      {isZone && <FormField label="ราคาโซน (บาท)" required><PriceInput value={item.zonePrice} onChange={value => update('zonePrice', value)}/></FormField>}
     </div>
     <div className="modal-actions"><button className="btn ghost" onClick={onClose}>ยกเลิก</button><button disabled={!item.name} className="btn primary" onClick={() => onSave(item)}><PlusIcon/>สร้าง{isZone ? 'โซน' : 'วัตถุ'}</button></div>
   </div></div>
@@ -414,7 +424,7 @@ function ZoneDetail({ zone, onBack, onSave, onDelete }) {
     <div className="zone-detail-grid">
       <div className="seat-shape-frame"><div ref={seatCanvas} className={`free-seat-canvas ${working.shape}`} style={{ '--zone-color': working.color }} onClick={() => setSelectedSeat(null)}>{working.shape === 'triangle' && <svg className="triangle-zone-frame" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><polygon data-testid="triangle-zone-outline" points="50,1.5 98.5,98.5 1.5,98.5" fill="none" stroke="#e72d70" strokeWidth="1.5" vectorEffect="non-scaling-stroke"/></svg>}{working.seatItems.map(seat => <button key={seatKey(seat)} className={`free-seat ${seat.disabled ? 'disabled' : ''} ${seatKey(activeSeat) === seatKey(seat) ? 'selected' : ''}`} style={{ left: `${seat.x}%`, top: `${seat.y}%` }} onPointerDown={e => dragSeat(e, seat)} onClick={e => { e.stopPropagation(); setSelectedSeat(seat) }}>{seat.name}</button>)}</div><p className="seat-hint">ลากเก้าอี้ได้อย่างอิสระ และคลิกเพื่อแก้ชื่อรายตัว</p></div>
       <aside className="zone-form"><div className="zone-badge" style={{ background: working.color, ...shapeStyle(working.shape) }}>{working.name}<small>{working.seatItems.length} ที่นั่ง</small></div>
-        <FormField label="ชื่อโซน"><input value={working.name} onChange={e => update('name', e.target.value)}/></FormField><FormField label="สีโซน"><input className="color-input" type="color" value={working.color} onChange={e => update('color', e.target.value)}/></FormField><FormField label="ราคาโซน (บาท)"><input type="number" min="0" step="0.01" value={working.zonePrice || 0} onChange={e => update('zonePrice', Number(e.target.value))}/></FormField>
+        <FormField label="ชื่อโซน"><input value={working.name} onChange={e => update('name', e.target.value)}/></FormField><FormField label="สีโซน"><input className="color-input" type="color" value={working.color} onChange={e => update('color', e.target.value)}/></FormField><FormField label="ราคาโซน (บาท)"><PriceInput value={working.zonePrice} onChange={value => update('zonePrice', value)}/></FormField>
         {activeSeat && <div className="seat-inspector"><b>เก้าอี้ที่เลือก</b><FormField label="ชื่อเก้าอี้"><input value={activeSeat.name} onChange={e => updateSeat({ ...activeSeat, name: e.target.value })}/></FormField><button className={`btn small ${activeSeat.disabled ? 'success' : 'ghost'}`} onClick={() => updateSeat({ ...activeSeat, disabled: !activeSeat.disabled })}>{activeSeat.disabled ? 'เปิดใช้งานเก้าอี้' : 'ปิดใช้งานเก้าอี้'}</button><button className="btn danger small" onClick={() => { setWorking(current => ({ ...current, seatItems: current.seatItems.filter(seat => seatKey(seat) !== seatKey(activeSeat)) })); setSelectedSeat(null) }}><TrashIcon/>ลบเก้าอี้</button></div>}
         <div className="zone-stat"><span>ที่นั่งพร้อมใช้</span><b>{working.seatItems.length - disabledCount}</b></div><div className="zone-stat"><span>ปิดใช้งาน</span><b>{disabledCount}</b></div>
       </aside>

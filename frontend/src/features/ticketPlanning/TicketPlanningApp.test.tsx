@@ -106,6 +106,21 @@ describe('ticket planning overview layout', () => {
     expect(screen.queryByRole('button', { name: /เพิ่มรายการคอนเสิร์ต/ })).not.toBeInTheDocument()
   })
 
+  it('shows the zone price without a leading zero when typing 200', async () => {
+    loadConcerts.mockResolvedValue([concert()])
+    render(<TicketPlanningApp />)
+    const user = userEvent.setup()
+
+    await user.click(await screen.findByRole('button', { name: 'เลือกเพื่อวางแผน' }))
+    await user.click(screen.getByRole('button', { name: /ออกแบบผังและที่นั่ง/ }))
+    await user.click(screen.getByTitle('สร้างโซนสี่เหลี่ยม'))
+
+    const price = screen.getByLabelText(/ราคาโซน/) as HTMLInputElement
+    expect(price.value).toBe('')
+    await user.type(price, '200')
+    expect(price.value).toBe('200')
+  })
+
   it('keeps triangle seats inside the pink outline without overlap', async () => {
     loadConcerts.mockResolvedValue([concert()])
     render(<TicketPlanningApp />)
