@@ -1,6 +1,6 @@
 import React from 'react';
-import type { ConcertItem, SponsorItem, AdPackage, ZoneSummary, SponsorSummary } from '../../types/report';
-import { ConcertCard } from './ConcertCard';
+import type { ConcertItem, SponsorItem, AdPackage, ZoneSummary, SponsorSummary } from '@/types/report';
+import { ConcertCard } from '@/components/compo_ConsertReport/ConcertCard';
 
 interface ConcertDetailReportProps {
   concert: ConcertItem;

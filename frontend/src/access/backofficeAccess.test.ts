@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { canAccessBackofficeFeature, defaultModuleAccess, effectiveFeatureAccess, effectiveModulePermissions, hasModuleAccess, moduleOverridesForSave, normalizeModulePermissions } from './backofficeAccess';
+import { canAccessBackofficeFeature, defaultModuleAccess, effectiveFeatureAccess, effectiveModulePermissions, hasModuleAccess, moduleOverridesForSave, normalizeModulePermissions } from '@/access/backofficeAccess';
 
 describe('back-office access', () => {
   it('allows view but not edit when access is view', () => {

@@ -1,5 +1,5 @@
 import { pulse, flux, celestial, starlight } from '@/assets/poster';
-import type { EventData, ZoneInfo } from './types';
+import type { EventData, ZoneInfo } from '@/components/SeatSelection/types';
 
 // ข้อมูลคอนเสิร์ต (Mock)
 export const eventsMap: Record<string, EventData> = {

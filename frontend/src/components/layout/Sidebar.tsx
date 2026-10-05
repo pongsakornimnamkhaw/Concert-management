@@ -20,7 +20,7 @@ import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import LogoutIcon from '@mui/icons-material/Logout';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-import logoImage from '../../assets/octavia-logo.png';
+import logoImage from '@/assets/octavia-logo.png';
 import { getEmployeeSession, clearEmployeeSession, EMPLOYEE_SESSION_EVENT } from '@/utils/employeeSession';
 import { effectiveFeatureAccess, effectiveModulePermissions, hasModuleAccess, type BackofficeFeature, type BackofficeModule } from '@/access/backofficeAccess';
 import { employeeAccountApi } from '@/api/employeeAccountApi';

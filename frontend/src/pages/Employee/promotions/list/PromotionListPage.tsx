@@ -35,14 +35,14 @@ import ClearIcon from '@mui/icons-material/Clear';
 import DeleteIcon from '@mui/icons-material/Delete';
 import Snackbar from '@mui/material/Snackbar';
 
-import { managementApi } from '../../../../api/managementApi';
-import type { Promotion, TabStatus, EditHistoryEntry, ActivityLog } from '../../../../types/promotion';
-import StatusBadge from '../../../../components/ui/StatusBadge';
-import Pagination from '../../../../components/ui/Pagination';
+import { managementApi } from '@/api/managementApi';
+import type { Promotion, TabStatus, EditHistoryEntry, ActivityLog } from '@/types/promotion';
+import StatusBadge from '@/components/ui/StatusBadge';
+import Pagination from '@/components/ui/Pagination';
 import { useNavigate } from 'react-router-dom';
-import { promotionFontSizes, promotionPageSx, promotionTitleSx } from '../typography';
-import ConfirmDeleteDialog from '../../../../components/common/ConfirmDeleteDialog';
-import { useModuleAccess } from '../../../../access/useModuleAccess';
+import { promotionFontSizes, promotionPageSx, promotionTitleSx } from '@/pages/Employee/promotions/typography';
+import ConfirmDeleteDialog from '@/components/common/ConfirmDeleteDialog';
+import { useModuleAccess } from '@/access/useModuleAccess';
 
 const PAGE_SIZE = 3;
 

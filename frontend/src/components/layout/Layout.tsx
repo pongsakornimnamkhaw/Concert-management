@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box } from '@mui/material';
-import Sidebar, { SIDEBAR_WIDTH } from './Sidebar';
-import Header from './Header';
+import Sidebar, { SIDEBAR_WIDTH } from '@/components/layout/Sidebar';
+import Header from '@/components/layout/Header';
 
 interface LayoutProps {
   children: React.ReactNode;

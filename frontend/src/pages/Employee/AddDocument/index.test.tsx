@@ -3,7 +3,7 @@ import { MemoryRouter } from 'react-router-dom';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { waitFor } from '@testing-library/react';
 import { saveEmployeeSession } from '@/utils/employeeSession';
-import DocumentsPage from './index';
+import DocumentsPage from '@/pages/Employee/AddDocument/index';
 
 vi.mock('@/api/concertApi', () => ({
   concertApi: {

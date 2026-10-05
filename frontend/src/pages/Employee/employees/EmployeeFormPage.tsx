@@ -18,9 +18,9 @@ import IconButton from '@mui/material/IconButton';
 import SaveIcon from '@mui/icons-material/Save';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
-import type { Employee, EmployeeJobRole, EmployeeModuleAccess, EmployeePermission, PersonnelType } from '../../../types/promotion';
-import { BACKOFFICE_MODULES, defaultModuleAccess, moduleOverridesForSave, type BackofficeModule } from '../../../access/backofficeAccess';
-import { managementApi } from '../../../api/managementApi';
+import type { Employee, EmployeeJobRole, EmployeeModuleAccess, EmployeePermission, PersonnelType } from '@/types/promotion';
+import { BACKOFFICE_MODULES, defaultModuleAccess, moduleOverridesForSave, type BackofficeModule } from '@/access/backofficeAccess';
+import { managementApi } from '@/api/managementApi';
 import { useNavigate, useParams } from 'react-router-dom';
 
 const DEPARTMENTS = ['ฝ่ายสถานที่', 'ฝ่ายการเงิน', 'ฝ่ายโปรดักชั่น', 'ฝ่ายการตลาด', 'ฝ่ายประชาสัมพันธ์', 'ฝ่ายบุคคล'];

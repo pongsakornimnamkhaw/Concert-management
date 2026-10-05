@@ -2,7 +2,7 @@
 import { MemoryRouter, Route, Routes, useLocation } from 'react-router-dom';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { employeeAuthApi } from '@/api/employeeAuthApi';
-import EmployeeRouteGuard from './EmployeeRouteGuard';
+import EmployeeRouteGuard from '@/components/auth/EmployeeRouteGuard';
 import { saveCustomerSession } from '@/utils/customerSession';
 
 vi.mock('@/api/employeeAuthApi', () => ({

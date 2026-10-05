@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import mapImg from '../../assets/map.jpg';
+import mapImg from '@/assets/map.jpg';
 import { Box, Button, Divider, Link, Typography } from '@mui/material';
 
 export const ContactHQ: React.FC = () => {

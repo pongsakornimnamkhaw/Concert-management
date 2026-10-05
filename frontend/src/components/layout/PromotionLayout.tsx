@@ -1,5 +1,5 @@
 import Box from '@mui/material/Box'
-import Sidebar, { SIDEBAR_WIDTH } from './Sidebar'
+import Sidebar, { SIDEBAR_WIDTH } from '@/components/layout/Sidebar'
 
 export default function PromotionLayout({ children }: { children: React.ReactNode }) {
   return (

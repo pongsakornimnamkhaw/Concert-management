@@ -1,7 +1,7 @@
 import { render, screen, within } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { describe, expect, it, vi } from 'vitest';
-import CustomerLayoutCanvas from './CustomerLayoutCanvas';
+import CustomerLayoutCanvas from '@/components/SeatSelection/CustomerLayoutCanvas';
 
 const zone = {
     id: 'ZA', kind: 'zone', name: 'VIP', color: '#ff0000', seats: 1, zonePrice: 2500, type: 'VIP', shape: 'rectangle',

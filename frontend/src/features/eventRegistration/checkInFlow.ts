@@ -1,4 +1,4 @@
-import { normalizeTicketCode } from './ticketCode';
+import { normalizeTicketCode } from '@/features/eventRegistration/ticketCode';
 
 type RegistrationAPI = {
   lookupTicket: (ticketId: string, concertId: string) => Promise<Record<string, unknown>>;

@@ -1,5 +1,5 @@
 import React from 'react';
-import type { ConcertItem } from '../../types/report';
+import type { ConcertItem } from '@/types/report';
 
 interface ConcertCardProps {
   concert: ConcertItem;

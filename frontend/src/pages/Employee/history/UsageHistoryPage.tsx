@@ -21,9 +21,9 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import SearchIcon from '@mui/icons-material/Search';
 
-import { managementApi } from '../../../api/managementApi';
-import Pagination from '../../../components/ui/Pagination';
-import type { ActivityLog } from '../../../types/promotion';
+import { managementApi } from '@/api/managementApi';
+import Pagination from '@/components/ui/Pagination';
+import type { ActivityLog } from '@/types/promotion';
 
 type HistoryLog = ActivityLog & { target_id?: string };
 type HistoryTab = 'staff' | 'user';

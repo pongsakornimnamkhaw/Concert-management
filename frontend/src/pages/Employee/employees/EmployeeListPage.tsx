@@ -28,11 +28,11 @@ import PeopleIcon from '@mui/icons-material/People';
 import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutlined';
 
-import type { Employee, EmployeePermission } from '../../../types/promotion';
-import { managementApi } from '../../../api/managementApi';
+import type { Employee, EmployeePermission } from '@/types/promotion';
+import { managementApi } from '@/api/managementApi';
 import { getEmployeeSession } from '@/utils/employeeSession';
-import Pagination from '../../../components/ui/Pagination';
-import PasswordResetRequestsPanel from './PasswordResetRequestsPanel';
+import Pagination from '@/components/ui/Pagination';
+import PasswordResetRequestsPanel from '@/pages/Employee/employees/PasswordResetRequestsPanel';
 import { useNavigate } from 'react-router-dom';
 
 export default function EmployeeListPage() {

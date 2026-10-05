@@ -1,8 +1,8 @@
-import type { ConcertItem } from '../types/report';
-import posterCelestial from '../assets/poster_celestial.jpg';
-import posterFlux from '../assets/poster_flux.jpg';
-import posterPulseLive from '../assets/poster_pulse_live.jpg';
-import posterStarlight from '../assets/poster_starlight.jpg';
+import type { ConcertItem } from '@/types/report';
+import posterCelestial from '@/assets/poster_celestial.jpg';
+import posterFlux from '@/assets/poster_flux.jpg';
+import posterPulseLive from '@/assets/poster_pulse_live.jpg';
+import posterStarlight from '@/assets/poster_starlight.jpg';
 
 export const finishedConcertsData: ConcertItem[] = [
   {

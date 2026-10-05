@@ -1,6 +1,6 @@
 import React from 'react';
-import type { ConcertItem } from '../../types/report';
-import { ConcertCard } from './ConcertCard';
+import type { ConcertItem } from '@/types/report';
+import { ConcertCard } from '@/components/compo_ConsertReport/ConcertCard';
 
 interface FinishedConcertListProps {
   concerts: ConcertItem[];

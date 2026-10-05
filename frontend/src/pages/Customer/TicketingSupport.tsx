@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import type { TicketingSubTab } from '../../types/contact';
+import type { TicketingSubTab } from '@/types/contact';
 import Box from '@mui/material/Box';
 
 interface TicketingSupportProps {

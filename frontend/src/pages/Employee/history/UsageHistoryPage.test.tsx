@@ -1,11 +1,11 @@
 import { fireEvent, render, screen, waitFor } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
-import UsageHistoryPage from './UsageHistoryPage';
+import UsageHistoryPage from '@/pages/Employee/history/UsageHistoryPage';
 
 const { activityLogs } = vi.hoisted(() => ({ activityLogs: vi.fn() }));
 
-vi.mock('../../../api/managementApi', () => ({
+vi.mock('@/api/managementApi', () => ({
   managementApi: { activityLogs },
 }));
 

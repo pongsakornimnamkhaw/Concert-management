@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react'
 import { MemoryRouter, Route, Routes } from 'react-router-dom'
 import { describe, expect, it, vi } from 'vitest'
 
-import ZoneSelectionPage from './index'
+import ZoneSelectionPage from '@/pages/Customer/ZoneSelection/index'
 
 const mocks = vi.hoisted(() => ({
   getConcert: vi.fn(),

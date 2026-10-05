@@ -1,5 +1,5 @@
 import type { SeatInventory } from '@/api/seatInventoryApi';
-import type { SeatData, SeatStatus } from './types';
+import type { SeatData, SeatStatus } from '@/components/SeatSelection/types';
 
 const backendSeatStatus = (status: string): SeatStatus => {
     if (status === 'LOCKED') return 'locked';

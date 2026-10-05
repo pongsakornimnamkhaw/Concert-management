@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { mergeSeatInventory, zoneDisplayState } from './customerSeatState';
+import { mergeSeatInventory, zoneDisplayState } from '@/components/SeatSelection/customerSeatState';
 
 describe('customer seat state', () => {
     it('คง selected เฉพาะเมื่อ backend ยังรายงานว่าว่าง', () => {

@@ -1,5 +1,5 @@
 import { getEmployeeSession } from '@/utils/employeeSession';
-import { effectiveModulePermissions, hasModuleAccess, type BackofficeModule } from './backofficeAccess';
+import { effectiveModulePermissions, hasModuleAccess, type BackofficeModule } from '@/access/backofficeAccess';
 
 export function useModuleAccess(module: BackofficeModule) {
   const session = getEmployeeSession();

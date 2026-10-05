@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { EMPLOYEE_SETUP_TOKEN_KEY, employeeAuthApi, mapEmployeeSession } from './employeeAuthApi';
+import { EMPLOYEE_SETUP_TOKEN_KEY, employeeAuthApi, mapEmployeeSession } from '@/api/employeeAuthApi';
 
 afterEach(() => vi.restoreAllMocks());
 

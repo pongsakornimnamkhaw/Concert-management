@@ -1,7 +1,7 @@
 import { act, fireEvent, render, screen } from '@testing-library/react';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { MemoryRouter } from 'react-router-dom';
-import EmployeePasswordRecoveryPage from './index';
+import EmployeePasswordRecoveryPage from '@/pages/Employee/PasswordRecovery/index';
 
 const { createResetRequest, getResetStatus, completeReset } = vi.hoisted(() => ({
   createResetRequest: vi.fn(),

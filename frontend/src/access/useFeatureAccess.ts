@@ -1,4 +1,4 @@
-import { effectiveFeatureAccess, type BackofficeFeature } from './backofficeAccess';
+import { effectiveFeatureAccess, type BackofficeFeature } from '@/access/backofficeAccess';
 import { getEmployeeSession } from '@/utils/employeeSession';
 
 export function useFeatureAccess(feature: BackofficeFeature) {

@@ -1,7 +1,7 @@
 import { Outlet, useLocation } from 'react-router-dom';
-import CustomerHeader from '../common/CustomerHeader';
-import { Sidebar } from './Sidebar';
-import '../../App.css';
+import CustomerHeader from '@/components/common/CustomerHeader';
+import { Sidebar } from '@/components/_frontend/Sidebar';
+import '@/App.css';
 import Box from '@mui/material/Box';
 
 export default function ExternalContactLayout() {

@@ -31,13 +31,13 @@ import ConfirmationNumberIcon from '@mui/icons-material/ConfirmationNumber';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
-import { managementApi } from '../../../../api/managementApi';
-import type { Promotion } from '../../../../types/promotion';
-import StatusBadge from '../../../../components/ui/StatusBadge';
-import Pagination from '../../../../components/ui/Pagination';
+import { managementApi } from '@/api/managementApi';
+import type { Promotion } from '@/types/promotion';
+import StatusBadge from '@/components/ui/StatusBadge';
+import Pagination from '@/components/ui/Pagination';
 import { useNavigate, useParams } from 'react-router-dom';
-import ConfirmDeleteDialog from '../../../../components/common/ConfirmDeleteDialog';
-import { useModuleAccess } from '../../../../access/useModuleAccess';
+import ConfirmDeleteDialog from '@/components/common/ConfirmDeleteDialog';
+import { useModuleAccess } from '@/access/useModuleAccess';
 
 const PAGE_SIZE = 5;
 

@@ -1,5 +1,5 @@
-import EventRegistrationApp from './EventRegistrationApp'
-import './styles.css'
+import EventRegistrationApp from '@/features/eventRegistration/EventRegistrationApp'
+import '@/features/eventRegistration/styles.css'
 import Box from '@mui/material/Box'
 
 export default function EventRegistrationModule() {

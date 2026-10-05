@@ -26,11 +26,11 @@ import SaveIcon from '@mui/icons-material/Save';
 import CancelIcon from '@mui/icons-material/Cancel';
 import DeleteIcon from '@mui/icons-material/Delete';
 
-import { managementApi } from '../../../../api/managementApi';
-import type { DiscountType, Concert, Zone } from '../../../../types/promotion';
+import { managementApi } from '@/api/managementApi';
+import type { DiscountType, Concert, Zone } from '@/types/promotion';
 import { useNavigate, useParams } from 'react-router-dom';
-import ConfirmDeleteDialog from '../../../../components/common/ConfirmDeleteDialog';
-import { useModuleAccess } from '../../../../access/useModuleAccess';
+import ConfirmDeleteDialog from '@/components/common/ConfirmDeleteDialog';
+import { useModuleAccess } from '@/access/useModuleAccess';
 
 interface FormState {
   promotion_name: string;

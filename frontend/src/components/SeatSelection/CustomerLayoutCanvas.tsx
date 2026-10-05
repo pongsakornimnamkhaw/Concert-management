@@ -1,7 +1,7 @@
 import { Box, Typography } from '@mui/material';
 import type { PlanningLayout, PlanningLayoutObject, PlanningZone, ZoneInventory } from '@/api/seatInventoryApi';
-import type { SeatData, SeatStatus } from './types';
-import { zoneDisplayState } from './customerSeatState';
+import type { SeatData, SeatStatus } from '@/components/SeatSelection/types';
+import { zoneDisplayState } from '@/components/SeatSelection/customerSeatState';
 
 type Props = {
     layout: PlanningLayout;

@@ -2,14 +2,14 @@ import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
-import PromotionFormPage from './PromotionFormPage';
+import PromotionFormPage from '@/pages/Employee/promotions/form/PromotionFormPage';
 
 const { promotionOptions, getPromotion } = vi.hoisted(() => ({
   promotionOptions: vi.fn(),
   getPromotion: vi.fn(),
 }));
 
-vi.mock('../../../../api/managementApi', () => ({
+vi.mock('@/api/managementApi', () => ({
   managementApi: {
     promotionOptions,
     getPromotion,
@@ -18,7 +18,7 @@ vi.mock('../../../../api/managementApi', () => ({
   },
 }));
 
-vi.mock('../../../../access/useModuleAccess', () => ({
+vi.mock('@/access/useModuleAccess', () => ({
   useModuleAccess: () => ({ canEdit: true }),
 }));
 

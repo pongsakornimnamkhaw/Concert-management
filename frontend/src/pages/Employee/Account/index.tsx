@@ -8,9 +8,9 @@ import Typography from '@mui/material/Typography';
 import Alert from '@mui/material/Alert';
 import type { EmployeeProfile } from '@/api/employeeAccountApi';
 import { employeeAccountApi } from '@/api/employeeAccountApi';
-import ProfileTab from './ProfileTab';
-import SecurityTab from './SecurityTab';
-import ActivityTab from './ActivityTab';
+import ProfileTab from '@/pages/Employee/Account/ProfileTab';
+import SecurityTab from '@/pages/Employee/Account/SecurityTab';
+import ActivityTab from '@/pages/Employee/Account/ActivityTab';
 
 export default function EmployeeAccountPage() {
   const [tab, setTab] = useState(0);

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import type { PlanningSubTab, ScheduleItem, TimelineStep } from '../../types/contact';
-import { StatusTimeline } from '../../components/_frontend/StatusTimeline';
+import type { PlanningSubTab, ScheduleItem, TimelineStep } from '@/types/contact';
+import { StatusTimeline } from '@/components/_frontend/StatusTimeline';
 import Box from '@mui/material/Box';
-import { workPlanApi } from '../../api/reportApi';
+import { workPlanApi } from '@/api/reportApi';
 
 interface PlanningFormProps {
   subTab: PlanningSubTab;

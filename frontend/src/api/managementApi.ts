@@ -1,4 +1,4 @@
-import type { ActivityLog, Concert, Employee, Promotion, PromotionApproval, Zone } from '../types/promotion';
+import type { ActivityLog, Concert, Employee, Promotion, PromotionApproval, Zone } from '@/types/promotion';
 
 export interface PromotionPayload {
   promotion_name: string;
