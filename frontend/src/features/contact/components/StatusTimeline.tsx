@@ -1,5 +1,5 @@
 import React from 'react';
-import type { TimelineStep } from '@/types/contact';
+import type { TimelineStep } from '@/features/contact/types/contact';
 import { Box, Typography } from '@mui/material';
 
 interface StatusTimelineProps {

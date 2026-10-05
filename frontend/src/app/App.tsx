@@ -62,12 +62,12 @@ import EmployeePasswordSetupPage from '@/features/auth/pages/EmployeePasswordSet
 import type { EditHistoryEntry } from '@/features/promotion/types/promotion'
 
 // B6733377 - External Contact
-import ExternalContactLayout from '@/components/_frontend/ExternalContactLayout'
-import { ContactHQ } from '@/pages/Customer/ContactHQ'
-import { SponsorForm } from '@/pages/Customer/SponsorForm'
-import { PlanningForm } from '@/pages/Customer/PlanningForm'
-import { TicketingSupport } from '@/pages/Customer/TicketingSupport'
-import { GeneralInquiryForm } from '@/pages/Customer/GeneralInquiryForm'
+import ExternalContactLayout from '@/features/contact/components/ExternalContactLayout'
+import { ContactHQ } from '@/features/contact/pages/ContactHQ'
+import { SponsorForm } from '@/features/contact/pages/SponsorForm'
+import { PlanningForm } from '@/features/contact/pages/PlanningForm'
+import { TicketingSupport } from '@/features/contact/pages/TicketingSupport'
+import { GeneralInquiryForm } from '@/features/contact/pages/GeneralInquiryForm'
 
 function App() {
   const [editHistory, setEditHistory] = useState<EditHistoryEntry[]>([])

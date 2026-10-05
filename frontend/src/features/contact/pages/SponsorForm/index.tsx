@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import type { SponsorSubTab, AdRequestRow, TimelineStep } from '@/types/contact';
-import { StatusTimeline } from '@/components/_frontend/StatusTimeline';
-import banner1 from '@/assets/banner1.jpg';
-import banner2 from '@/assets/banner2.jpg';
+import type { SponsorSubTab, AdRequestRow, TimelineStep } from '@/features/contact/types/contact';
+import { StatusTimeline } from '@/features/contact/components/StatusTimeline';
+import banner1 from '@/assets/contact/banner1.jpg';
+import banner2 from '@/assets/contact/banner2.jpg';
 import Box from '@mui/material/Box';
 
 interface SponsorFormProps {

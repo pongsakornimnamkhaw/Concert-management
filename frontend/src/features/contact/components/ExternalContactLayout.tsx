@@ -1,6 +1,6 @@
 import { Outlet, useLocation } from 'react-router-dom';
 import CustomerHeader from '@/layouts/customer/CustomerHeader';
-import { Sidebar } from '@/components/_frontend/Sidebar';
+import { Sidebar } from '@/features/contact/components/Sidebar';
 import '@/app/App.css';
 import Box from '@mui/material/Box';
 

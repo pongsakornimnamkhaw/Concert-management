@@ -1,5 +1,5 @@
 import type { ConcertItem } from '@/types/report';
-import type { ScheduleItem, TimelineStep } from '@/types/contact';
+import type { ScheduleItem, TimelineStep } from '@/features/contact/types/contact';
 
 const API_BASE = '/api';
 

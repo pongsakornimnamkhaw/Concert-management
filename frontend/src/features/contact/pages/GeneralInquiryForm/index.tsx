@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import type { GeneralInquiryFormData } from '@/types/contact';
+import type { GeneralInquiryFormData } from '@/features/contact/types/contact';
 import { Box, Button, TextField, Typography } from '@mui/material';
 
 export const GeneralInquiryForm: React.FC = () => {
