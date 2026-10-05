@@ -1,2 +1,5 @@
 # Claude Code local state (worktrees, launch config, settings) — never shared
 .claude/
+
+# Build outputs
+*.exe
