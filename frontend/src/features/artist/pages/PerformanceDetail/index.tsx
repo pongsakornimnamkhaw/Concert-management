@@ -10,8 +10,8 @@ import {
   MenuItem,
   FormControl,
 } from '@mui/material';
-import { artistApi, type ArtistData } from '@/api/artistApi';
-import type { PerformanceScheduleData } from '@/api/artistApi';
+import { artistApi, type ArtistData } from '@/features/artist/api/artistApi';
+import type { PerformanceScheduleData } from '@/features/artist/api/artistApi';
 import { concertApi, type ConcertData } from '@/features/concert/api/concertApi';
 
 const PerformanceDetailPage = () => {

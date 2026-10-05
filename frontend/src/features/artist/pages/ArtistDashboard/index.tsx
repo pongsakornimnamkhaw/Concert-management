@@ -5,7 +5,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import { Link } from 'react-router-dom';
 import NotificationBell from '@/features/concert/components/NotificationBell';
 import { flux, pulse, celestial } from '@/assets/poster';
-import { artistApi } from '@/api/artistApi';
+import { artistApi } from '@/features/artist/api/artistApi';
 
 const ArtistDashboardPage: React.FC = () => {
   const [summary, setSummary] = useState<any>({ artist_count: 0, schedule_count: 0, requirement_count: 0, invitations: [], history: [] });

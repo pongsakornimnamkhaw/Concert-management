@@ -4,7 +4,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import CircleIcon from '@mui/icons-material/Circle';
 import { concertApi } from '@/features/concert/api/concertApi';
-import { artistApi } from '@/api/artistApi';
+import { artistApi } from '@/features/artist/api/artistApi';
 
 interface NotificationItem {
   id: string;

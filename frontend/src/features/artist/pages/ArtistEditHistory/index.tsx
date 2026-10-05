@@ -16,7 +16,7 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { Dayjs } from 'dayjs';
 import { concertApi, ConcertData } from '@/features/concert/api/concertApi';
-import { artistApi } from '@/api/artistApi';
+import { artistApi } from '@/features/artist/api/artistApi';
 
 const initialRows: GridRowsProp = [];
 

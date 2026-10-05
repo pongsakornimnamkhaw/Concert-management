@@ -9,7 +9,7 @@ import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import { artistApi, type ArtistData, type PerformanceScheduleData } from '@/api/artistApi';
+import { artistApi, type ArtistData, type PerformanceScheduleData } from '@/features/artist/api/artistApi';
 import { concertApi, type ConcertData } from '@/features/concert/api/concertApi';
 import ConfirmDeleteDialog from '@/shared/components/ConfirmDeleteDialog';
 

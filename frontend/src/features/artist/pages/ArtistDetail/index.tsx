@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Alert, Box, Button, CircularProgress, Grid, Paper, TextField, Typography } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { useNavigate, useParams } from 'react-router-dom';
-import { artistApi, type ArtistData } from '@/api/artistApi';
+import { artistApi, type ArtistData } from '@/features/artist/api/artistApi';
 
 const fields: Array<{ key: keyof ArtistData; label: string }> = [
   { key: 'artist_name', label: 'ชื่อศิลปิน' },
