@@ -5,7 +5,7 @@ import UsageHistoryPage from '@/features/userManagement/pages/UsageHistory';
 
 const { activityLogs } = vi.hoisted(() => ({ activityLogs: vi.fn() }));
 
-vi.mock('@/api/managementApi', () => ({
+vi.mock('@/features/promotion/api/managementApi', () => ({
   managementApi: { activityLogs },
 }));
 

@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import type { CustomerPromotion } from '@/types/customerPromotion';
+import type { CustomerPromotion } from '@/features/promotion/types/customerPromotion';
 import PromotionPicker, { type PromotionPickerProps } from '@/components/SeatSelection/PromotionPicker';
 
 const promotion = (id: string, code: string): CustomerPromotion => ({

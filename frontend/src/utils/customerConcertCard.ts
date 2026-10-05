@@ -1,7 +1,7 @@
 import { celestial, flux, pulse, starlight } from '@/assets/poster';
 import type { CustomerEvent } from '@/data/customerEvents';
-import type { CustomerPromotionConcert } from '@/types/customerPromotion';
-import { formatThaiDateRange } from '@/utils/customerPromotion';
+import type { CustomerPromotionConcert } from '@/features/promotion/types/customerPromotion';
+import { formatThaiDateRange } from '@/features/promotion/utils/customerPromotion';
 import { posterIndexForConcertId } from '@/shared/utils/posterPalette';
 
 // คอนเสิร์ตในฐานข้อมูลยังไม่มีรูปโปสเตอร์ ถ้าใช้รูปสำรองรูปเดียวทุกใบ การ์ดจะ

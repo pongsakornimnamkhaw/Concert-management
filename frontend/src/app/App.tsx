@@ -17,8 +17,8 @@ import EventDetailPage from '@/pages/Customer/EventDetail'
 import ZoneSelectionPage from '@/pages/Customer/ZoneSelection'
 import SeatSelectionPage from '@/pages/Customer/SeatSelection'
 import CustomerAccountPage from '@/pages/Customer/Account'
-import CustomerPromotionsPage from '@/pages/Customer/Promotions'
-import CustomerPromotionDetailPage from '@/pages/Customer/PromotionDetail'
+import CustomerPromotionsPage from '@/features/promotion/pages/CustomerPromotions'
+import CustomerPromotionDetailPage from '@/features/promotion/pages/CustomerPromotionDetail'
 import SalesBookingManagementPage from '@/pages/Employee/SalesBookingManagement'
 
 // B6707651 - Frontend (Concert Management)
@@ -49,17 +49,17 @@ import RegistrationModule from '@/features/eventRegistration/EventRegistrationMo
 
 // B6717537 - Frontend (Promotions & Employees)
 import PromotionLayout from '@/layouts/backoffice/PromotionLayout'
-import PromotionListPage from '@/pages/Employee/promotions/list/PromotionListPage'
-import PromotionDetailPage from '@/pages/Employee/promotions/detail/PromotionDetailPage'
-import PromotionFormPage from '@/pages/Employee/promotions/form/PromotionFormPage'
-import PromotionApprovalPage from '@/pages/Employee/promotions/approval/PromotionApprovalPage'
+import PromotionListPage from '@/features/promotion/pages/PromotionList'
+import PromotionDetailPage from '@/features/promotion/pages/PromotionDetail'
+import PromotionFormPage from '@/features/promotion/pages/PromotionForm'
+import PromotionApprovalPage from '@/features/promotion/pages/PromotionApproval'
 import UsageHistoryPage from '@/features/userManagement/pages/UsageHistory'
 import EmployeeListPage from '@/features/userManagement/pages/EmployeeList'
 import EmployeeFormPage from '@/features/userManagement/pages/EmployeeForm'
 import EmployeeAccountPage from '@/features/userManagement/pages/EmployeeAccount'
 import EmployeePasswordRecoveryPage from '@/features/auth/pages/EmployeePasswordRecovery'
 import EmployeePasswordSetupPage from '@/features/auth/pages/EmployeePasswordSetup'
-import type { EditHistoryEntry } from '@/types/promotion'
+import type { EditHistoryEntry } from '@/features/promotion/types/promotion'
 
 // B6733377 - External Contact
 import ExternalContactLayout from '@/components/_frontend/ExternalContactLayout'

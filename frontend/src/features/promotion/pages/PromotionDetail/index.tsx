@@ -31,9 +31,9 @@ import ConfirmationNumberIcon from '@mui/icons-material/ConfirmationNumber';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
-import { managementApi } from '@/api/managementApi';
-import type { Promotion } from '@/types/promotion';
-import StatusBadge from '@/components/ui/StatusBadge';
+import { managementApi } from '@/features/promotion/api/managementApi';
+import type { Promotion } from '@/features/promotion/types/promotion';
+import StatusBadge from '@/features/promotion/components/StatusBadge';
 import Pagination from '@/shared/components/Pagination';
 import { useNavigate, useParams } from 'react-router-dom';
 import ConfirmDeleteDialog from '@/shared/components/ConfirmDeleteDialog';

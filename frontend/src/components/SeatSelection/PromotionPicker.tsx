@@ -1,8 +1,8 @@
 import type { FormEvent } from 'react';
 import { Box, Typography, FormControl, Select, MenuItem, TextField, Button, Chip, CircularProgress } from '@mui/material';
 import LocalOfferOutlinedIcon from '@mui/icons-material/LocalOfferOutlined';
-import type { CustomerPromotion } from '@/types/customerPromotion';
-import { discountLabel } from '@/utils/customerPromotion';
+import type { CustomerPromotion } from '@/features/promotion/types/customerPromotion';
+import { discountLabel } from '@/features/promotion/utils/customerPromotion';
 
 export interface PromotionPickerProps {
     /** โปรโมชั่นที่ระบบจับคู่ให้เองจากคอนเสิร์ต/โซน/ยอดปัจจุบัน */

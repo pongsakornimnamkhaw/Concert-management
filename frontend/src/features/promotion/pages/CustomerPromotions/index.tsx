@@ -21,9 +21,9 @@ import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import SearchRoundedIcon from '@mui/icons-material/SearchRounded';
 import { Link as RouterLink } from 'react-router-dom';
 import CustomerHeader from '@/layouts/customer/CustomerHeader';
-import { customerPromotionApi } from '@/api/customerPromotionApi';
-import type { CustomerPromotion } from '@/types/customerPromotion';
-import { discountLabel, formatThaiDate, isExpiringSoon } from '@/utils/customerPromotion';
+import { customerPromotionApi } from '@/features/promotion/api/customerPromotionApi';
+import type { CustomerPromotion } from '@/features/promotion/types/customerPromotion';
+import { discountLabel, formatThaiDate, isExpiringSoon } from '@/features/promotion/utils/customerPromotion';
 
 type Filter = 'all' | 'expiring';
 

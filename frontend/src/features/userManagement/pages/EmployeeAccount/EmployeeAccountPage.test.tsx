@@ -4,7 +4,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { MemoryRouter } from 'react-router-dom';
 import EmployeeAccountPage from '@/features/userManagement/pages/EmployeeAccount/index';
 import type { EmployeeProfile, EmployeeActivityPage } from '@/features/userManagement/api/employeeAccountApi';
-import type { PersonnelType } from '@/types/promotion';
+import type { PersonnelType } from '@/features/promotion/types/promotion';
 
 // ─── mock API ────────────────────────────────────────────────────────────────
 const { getProfile, updateProfile, updatePassword, getActivity } = vi.hoisted(() => ({

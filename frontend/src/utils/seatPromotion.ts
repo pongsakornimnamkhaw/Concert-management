@@ -1,4 +1,4 @@
-import type { CustomerPromotion } from '@/types/customerPromotion';
+import type { CustomerPromotion } from '@/features/promotion/types/customerPromotion';
 
 /** ออเดอร์ที่กำลังเลือกที่นั่งอยู่ ใช้ตัดสินว่าโปรโมชั่นไหนใช้ได้ */
 export interface PromotionOrder {

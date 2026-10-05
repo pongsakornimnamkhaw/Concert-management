@@ -10,10 +10,10 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PaidIcon from '@mui/icons-material/Paid';
 import { Link as RouterLink, useNavigate, useParams } from 'react-router-dom';
 import CustomerHeader from '@/layouts/customer/CustomerHeader';
-import { customerPromotionApi } from '@/api/customerPromotionApi';
-import type { CustomerPromotion, CustomerPromotionConcert } from '@/types/customerPromotion';
+import { customerPromotionApi } from '@/features/promotion/api/customerPromotionApi';
+import type { CustomerPromotion, CustomerPromotionConcert } from '@/features/promotion/types/customerPromotion';
 import { celestial, flux, pulse, starlight } from '@/assets/poster';
-import { discountLabel, formatThaiDate } from '@/utils/customerPromotion';
+import { discountLabel, formatThaiDate } from '@/features/promotion/utils/customerPromotion';
 
 interface EventView {
   title: string;

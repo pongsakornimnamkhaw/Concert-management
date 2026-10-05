@@ -1,4 +1,4 @@
-import type { PersonnelType } from '@/types/promotion';
+import type { PersonnelType } from '@/features/promotion/types/promotion';
 import type { ModulePermissions } from '@/features/auth/access/backofficeAccess';
 
 export interface EmployeeSession {

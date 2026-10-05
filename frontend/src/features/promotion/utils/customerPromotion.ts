@@ -1,4 +1,4 @@
-import type { CustomerPromotion } from '@/types/customerPromotion';
+import type { CustomerPromotion } from '@/features/promotion/types/customerPromotion';
 
 export function formatThaiDate(value: string) {
   if (!value) return '—';

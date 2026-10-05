@@ -5,9 +5,9 @@ import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 // Types & Constants
 import type { EventData, SeatData, ZoneInfo } from '@/components/SeatSelection/types';
 import { LOCK_DURATION, STEPS } from '@/components/SeatSelection/constants';
-import { customerPromotionApi } from '@/api/customerPromotionApi';
-import { formatThaiDate } from '@/utils/customerPromotion';
-import type { CustomerPromotion } from '@/types/customerPromotion';
+import { customerPromotionApi } from '@/features/promotion/api/customerPromotionApi';
+import { formatThaiDate } from '@/features/promotion/utils/customerPromotion';
+import type { CustomerPromotion } from '@/features/promotion/types/customerPromotion';
 import { calculateDiscount, filterEligiblePromotions, type PromotionOrder } from '@/utils/seatPromotion';
 import { bookingPaymentApi } from '@/api/bookingPaymentApi';
 import { seatInventoryApi, SeatHoldConflictError, type PlanningLayout } from '@/api/seatInventoryApi';

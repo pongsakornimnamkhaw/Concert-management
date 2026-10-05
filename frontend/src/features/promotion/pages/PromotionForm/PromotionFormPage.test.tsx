@@ -2,14 +2,14 @@ import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
-import PromotionFormPage from '@/pages/Employee/promotions/form/PromotionFormPage';
+import PromotionFormPage from '@/features/promotion/pages/PromotionForm';
 
 const { promotionOptions, getPromotion } = vi.hoisted(() => ({
   promotionOptions: vi.fn(),
   getPromotion: vi.fn(),
 }));
 
-vi.mock('@/api/managementApi', () => ({
+vi.mock('@/features/promotion/api/managementApi', () => ({
   managementApi: {
     promotionOptions,
     getPromotion,

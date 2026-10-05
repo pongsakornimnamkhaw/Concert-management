@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { customerPromotionApi } from '@/api/customerPromotionApi';
+import { customerPromotionApi } from '@/features/promotion/api/customerPromotionApi';
 import type { CustomerEvent } from '@/data/customerEvents';
 import { toCustomerEvent } from '@/utils/customerConcertCard';
 

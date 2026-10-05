@@ -3,8 +3,8 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { MemoryRouter } from 'react-router-dom';
 import { customerAccountApi, CustomerApiError } from '@/features/auth/api/customerAccountApi';
-import { customerPromotionApi } from '@/api/customerPromotionApi';
-import type { CustomerPromotionConcert } from '@/types/customerPromotion';
+import { customerPromotionApi } from '@/features/promotion/api/customerPromotionApi';
+import type { CustomerPromotionConcert } from '@/features/promotion/types/customerPromotion';
 import CustomerHeader from '@/layouts/customer/CustomerHeader';
 
 const concert = (id: string, name: string, location: string): CustomerPromotionConcert => ({

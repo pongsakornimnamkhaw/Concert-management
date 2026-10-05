@@ -28,8 +28,8 @@ import PeopleIcon from '@mui/icons-material/People';
 import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
 import PersonOutlineIcon from '@mui/icons-material/PersonOutlined';
 
-import type { Employee, EmployeePermission } from '@/types/promotion';
-import { managementApi } from '@/api/managementApi';
+import type { Employee, EmployeePermission } from '@/features/promotion/types/promotion';
+import { managementApi } from '@/features/promotion/api/managementApi';
 import { getEmployeeSession } from '@/features/auth/utils/employeeSession';
 import Pagination from '@/shared/components/Pagination';
 import PasswordResetRequestsPanel from '@/features/userManagement/components/PasswordResetRequestsPanel';

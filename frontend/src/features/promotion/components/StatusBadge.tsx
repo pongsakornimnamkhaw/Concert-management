@@ -1,6 +1,6 @@
 // src/components/ui/StatusBadge.tsx
 import Chip from '@mui/material/Chip';
-import type { PromotionStatus, ApprovalStatus } from '@/types/promotion';
+import type { PromotionStatus, ApprovalStatus } from '@/features/promotion/types/promotion';
 
 type Status = PromotionStatus | ApprovalStatus;
 

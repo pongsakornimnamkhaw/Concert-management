@@ -10,7 +10,7 @@ const mocks = vi.hoisted(() => ({
   listZones: vi.fn(),
 }))
 
-vi.mock('@/api/customerPromotionApi', () => ({
+vi.mock('@/features/promotion/api/customerPromotionApi', () => ({
   customerPromotionApi: { getConcert: mocks.getConcert },
 }))
 

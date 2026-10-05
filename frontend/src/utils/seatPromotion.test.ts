@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import type { CustomerPromotion } from '@/types/customerPromotion';
+import type { CustomerPromotion } from '@/features/promotion/types/customerPromotion';
 import {
     calculateDiscount,
     filterEligiblePromotions,

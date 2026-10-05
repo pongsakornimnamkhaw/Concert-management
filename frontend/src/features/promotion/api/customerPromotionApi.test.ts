@@ -1,5 +1,5 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
-import { customerPromotionApi } from '@/api/customerPromotionApi';
+import { customerPromotionApi } from '@/features/promotion/api/customerPromotionApi';
 
 const jsonResponse = (status: number, body: unknown) => new Response(JSON.stringify(body), {
     status,

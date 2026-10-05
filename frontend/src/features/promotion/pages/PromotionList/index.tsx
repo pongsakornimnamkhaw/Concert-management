@@ -35,12 +35,12 @@ import ClearIcon from '@mui/icons-material/Clear';
 import DeleteIcon from '@mui/icons-material/Delete';
 import Snackbar from '@mui/material/Snackbar';
 
-import { managementApi } from '@/api/managementApi';
-import type { Promotion, TabStatus, EditHistoryEntry, ActivityLog } from '@/types/promotion';
-import StatusBadge from '@/components/ui/StatusBadge';
+import { managementApi } from '@/features/promotion/api/managementApi';
+import type { Promotion, TabStatus, EditHistoryEntry, ActivityLog } from '@/features/promotion/types/promotion';
+import StatusBadge from '@/features/promotion/components/StatusBadge';
 import Pagination from '@/shared/components/Pagination';
 import { useNavigate } from 'react-router-dom';
-import { promotionFontSizes, promotionPageSx, promotionTitleSx } from '@/pages/Employee/promotions/typography';
+import { promotionFontSizes, promotionPageSx, promotionTitleSx } from '@/features/promotion/utils/typography';
 import ConfirmDeleteDialog from '@/shared/components/ConfirmDeleteDialog';
 import { useModuleAccess } from '@/features/auth/access/useModuleAccess';
 

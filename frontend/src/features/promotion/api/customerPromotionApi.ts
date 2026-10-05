@@ -3,7 +3,7 @@ import type {
   CustomerPromotionConcert,
   RedeemPromotionParams,
   RedeemPromotionResult,
-} from '@/types/customerPromotion';
+} from '@/features/promotion/types/customerPromotion';
 
 async function request<T>(path: string): Promise<T> {
   const controller = new AbortController();

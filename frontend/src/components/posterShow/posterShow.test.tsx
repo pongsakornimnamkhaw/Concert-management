@@ -1,8 +1,8 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import { customerPromotionApi } from '@/api/customerPromotionApi';
-import type { CustomerPromotionConcert } from '@/types/customerPromotion';
+import { customerPromotionApi } from '@/features/promotion/api/customerPromotionApi';
+import type { CustomerPromotionConcert } from '@/features/promotion/types/customerPromotion';
 import EventList, { type ComingSoonPoster } from '@/components/posterShow/posterShow';
 
 const concert = (id: string, name: string, location: string): CustomerPromotionConcert => ({

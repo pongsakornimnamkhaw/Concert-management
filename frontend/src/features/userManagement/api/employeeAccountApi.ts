@@ -1,4 +1,4 @@
-import type { PersonnelType, EmployeeResetRequest } from '@/types/promotion';
+import type { PersonnelType, EmployeeResetRequest } from '@/features/promotion/types/promotion';
 
 // ─── Error class ──────────────────────────────────────────────────────────────
 

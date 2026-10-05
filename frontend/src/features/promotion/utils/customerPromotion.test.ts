@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { formatThaiDate, formatThaiDateRange } from '@/utils/customerPromotion';
+import { formatThaiDate, formatThaiDateRange } from '@/features/promotion/utils/customerPromotion';
 
 describe('formatThaiDateRange', () => {
     it('shows a single date when the concert starts and ends on the same day', () => {
