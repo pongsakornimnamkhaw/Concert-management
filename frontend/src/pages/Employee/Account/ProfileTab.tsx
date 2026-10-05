@@ -7,7 +7,7 @@ import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import type { EmployeeProfile } from '@/api/employeeAccountApi';
 import { employeeAccountApi } from '@/api/employeeAccountApi';
-import { saveEmployeeSession } from '@/utils/employeeSession';
+import { saveEmployeeSession } from '@/features/auth/utils/employeeSession';
 
 interface Props {
   profile: EmployeeProfile;

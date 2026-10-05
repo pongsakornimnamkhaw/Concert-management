@@ -11,8 +11,8 @@ import LogoutRoundedIcon from '@mui/icons-material/LogoutRounded';
 import Logo from '@/shared/components/Logo';
 import CustomerConcertNotifications from '@/layouts/customer/CustomerConcertNotifications';
 import { useCustomerConcerts } from '@/hooks/useCustomerConcerts';
-import { clearCustomerSession, CUSTOMER_SESSION_EVENT, getCustomerSession, saveCustomerSession } from '@/utils/customerSession';
-import { customerAccountApi, CustomerApiError } from '@/api/customerAccountApi';
+import { clearCustomerSession, CUSTOMER_SESSION_EVENT, getCustomerSession, saveCustomerSession } from '@/features/auth/utils/customerSession';
+import { customerAccountApi, CustomerApiError } from '@/features/auth/api/customerAccountApi';
 import { Link as RouterLink, useLocation, useNavigate } from 'react-router-dom';
 
 const navItems = [

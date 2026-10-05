@@ -11,7 +11,7 @@ import type { CustomerPromotion } from '@/types/customerPromotion';
 import { calculateDiscount, filterEligiblePromotions, type PromotionOrder } from '@/utils/seatPromotion';
 import { bookingPaymentApi } from '@/api/bookingPaymentApi';
 import { seatInventoryApi, SeatHoldConflictError, type PlanningLayout } from '@/api/seatInventoryApi';
-import { getCustomerSession } from '@/utils/customerSession';
+import { getCustomerSession } from '@/features/auth/utils/customerSession';
 import { posterForConcert } from '@/utils/customerConcertCard';
 
 // Sub-components

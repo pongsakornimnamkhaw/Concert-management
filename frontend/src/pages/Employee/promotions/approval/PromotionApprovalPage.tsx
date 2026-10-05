@@ -39,7 +39,7 @@ import type { Promotion, PromotionApproval } from '@/types/promotion';
 import Pagination from '@/shared/components/Pagination';
 import { useNavigate } from 'react-router-dom';
 import { promotionFontSizes, promotionPageSx, promotionTitleSx } from '@/pages/Employee/promotions/typography';
-import { useModuleAccess } from '@/access/useModuleAccess';
+import { useModuleAccess } from '@/features/auth/access/useModuleAccess';
 
 interface ApprovalItem {
   approval: PromotionApproval;

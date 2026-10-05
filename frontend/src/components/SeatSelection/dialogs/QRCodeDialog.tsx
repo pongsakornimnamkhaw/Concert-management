@@ -4,7 +4,7 @@ import CloudUploadOutlinedIcon from '@mui/icons-material/CloudUploadOutlined';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import { useState, useEffect } from 'react';
 import { formatTime } from '@/components/SeatSelection/constants';
-import { getCustomerSession } from '@/utils/customerSession';
+import { getCustomerSession } from '@/features/auth/utils/customerSession';
 import promptPayQr from '@/assets/promptpay-qr/qr.png';
 
 interface QRCodeDialogProps {

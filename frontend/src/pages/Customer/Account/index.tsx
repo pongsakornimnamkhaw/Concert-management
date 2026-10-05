@@ -16,8 +16,8 @@ import CustomerHeader from '@/layouts/customer/CustomerHeader';
 import {
   CustomerApiError, customerAccountApi,
   type CustomerAccount, type CustomerProfileInput,
-} from '@/api/customerAccountApi';
-import { saveCustomerSession } from '@/utils/customerSession';
+} from '@/features/auth/api/customerAccountApi';
+import { saveCustomerSession } from '@/features/auth/utils/customerSession';
 import { Link as RouterLink, useNavigate } from 'react-router-dom';
 import type { BookingRecord } from '@/types/booking';
 import {

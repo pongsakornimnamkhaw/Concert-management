@@ -26,7 +26,7 @@ import {
 } from '@mui/icons-material';
 import { concertApi, ConcertData, DocumentItem } from '@/api/concertApi';
 import ConfirmDeleteDialog from '@/shared/components/ConfirmDeleteDialog';
-import { useModuleAccess } from '@/access/useModuleAccess';
+import { useModuleAccess } from '@/features/auth/access/useModuleAccess';
 import { useLocation } from 'react-router-dom';
 
 const DocumentsPage = () => {

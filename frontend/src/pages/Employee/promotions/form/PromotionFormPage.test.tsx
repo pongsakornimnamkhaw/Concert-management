@@ -18,7 +18,7 @@ vi.mock('@/api/managementApi', () => ({
   },
 }));
 
-vi.mock('@/access/useModuleAccess', () => ({
+vi.mock('@/features/auth/access/useModuleAccess', () => ({
   useModuleAccess: () => ({ canEdit: true }),
 }));
 

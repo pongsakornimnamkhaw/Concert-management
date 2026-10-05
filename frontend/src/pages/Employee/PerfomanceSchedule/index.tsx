@@ -30,7 +30,7 @@ import dayjs, { Dayjs } from 'dayjs';
 import { concertApi, ConcertData } from '@/api/concertApi';
 import { artistApi, type ArtistData } from '@/api/artistApi';
 import { concertDateOptions, validateScheduleRows } from '@/utils/scheduleRules';
-import { useFeatureAccess } from '@/access/useFeatureAccess';
+import { useFeatureAccess } from '@/features/auth/access/useFeatureAccess';
 
 export interface ScheduleRow {
   id: number | string;

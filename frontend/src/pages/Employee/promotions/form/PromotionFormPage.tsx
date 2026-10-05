@@ -30,7 +30,7 @@ import { managementApi } from '@/api/managementApi';
 import type { DiscountType, Concert, Zone } from '@/types/promotion';
 import { useNavigate, useParams } from 'react-router-dom';
 import ConfirmDeleteDialog from '@/shared/components/ConfirmDeleteDialog';
-import { useModuleAccess } from '@/access/useModuleAccess';
+import { useModuleAccess } from '@/features/auth/access/useModuleAccess';
 
 interface FormState {
   promotion_name: string;

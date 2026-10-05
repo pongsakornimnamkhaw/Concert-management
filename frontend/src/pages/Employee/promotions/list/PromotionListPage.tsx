@@ -42,7 +42,7 @@ import Pagination from '@/shared/components/Pagination';
 import { useNavigate } from 'react-router-dom';
 import { promotionFontSizes, promotionPageSx, promotionTitleSx } from '@/pages/Employee/promotions/typography';
 import ConfirmDeleteDialog from '@/shared/components/ConfirmDeleteDialog';
-import { useModuleAccess } from '@/access/useModuleAccess';
+import { useModuleAccess } from '@/features/auth/access/useModuleAccess';
 
 const PAGE_SIZE = 3;
 

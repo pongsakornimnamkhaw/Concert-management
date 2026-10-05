@@ -1,10 +1,10 @@
 import { afterEach, describe, expect, it, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import { customerAccountApi } from '@/api/customerAccountApi';
+import { customerAccountApi } from '@/features/auth/api/customerAccountApi';
 import { customerPromotionApi } from '@/api/customerPromotionApi';
 import { bookingPaymentApi } from '@/api/bookingPaymentApi';
-import type { CustomerAccount } from '@/api/customerAccountApi';
+import type { CustomerAccount } from '@/features/auth/api/customerAccountApi';
 import type { BookingRecord } from '@/types/booking';
 import CustomerAccountPage from '@/pages/Customer/Account';
 

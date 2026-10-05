@@ -10,7 +10,7 @@ import CheckIcon from '@mui/icons-material/Check';
 import { useNavigate } from 'react-router-dom';
 import { celestial, flux, pulse, starlight } from '@/assets/poster';
 import ConfirmDeleteDialog from '@/shared/components/ConfirmDeleteDialog';
-import { useModuleAccess } from '@/access/useModuleAccess';
+import { useModuleAccess } from '@/features/auth/access/useModuleAccess';
 
 const statusOptions = [
   { label: 'ทั้งหมด', emoji: '✨' }, { label: 'วางแผน', emoji: '📝' },

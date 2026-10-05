@@ -37,7 +37,7 @@ import StatusBadge from '@/components/ui/StatusBadge';
 import Pagination from '@/shared/components/Pagination';
 import { useNavigate, useParams } from 'react-router-dom';
 import ConfirmDeleteDialog from '@/shared/components/ConfirmDeleteDialog';
-import { useModuleAccess } from '@/access/useModuleAccess';
+import { useModuleAccess } from '@/features/auth/access/useModuleAccess';
 
 const PAGE_SIZE = 5;
 

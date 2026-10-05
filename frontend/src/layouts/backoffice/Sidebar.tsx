@@ -21,10 +21,10 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import LogoutIcon from '@mui/icons-material/Logout';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import logoImage from '@/assets/logo/octavia-logo.png';
-import { getEmployeeSession, clearEmployeeSession, EMPLOYEE_SESSION_EVENT } from '@/utils/employeeSession';
-import { effectiveFeatureAccess, effectiveModulePermissions, hasModuleAccess, type BackofficeFeature, type BackofficeModule } from '@/access/backofficeAccess';
+import { getEmployeeSession, clearEmployeeSession, EMPLOYEE_SESSION_EVENT } from '@/features/auth/utils/employeeSession';
+import { effectiveFeatureAccess, effectiveModulePermissions, hasModuleAccess, type BackofficeFeature, type BackofficeModule } from '@/features/auth/access/backofficeAccess';
 import { employeeAccountApi } from '@/api/employeeAccountApi';
-import { employeeAuthApi } from '@/api/employeeAuthApi';
+import { employeeAuthApi } from '@/features/auth/api/employeeAuthApi';
 
 import { useLocation, useNavigate } from 'react-router-dom';
 

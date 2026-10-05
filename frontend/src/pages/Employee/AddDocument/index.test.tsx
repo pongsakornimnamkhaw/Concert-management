@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { waitFor } from '@testing-library/react';
-import { saveEmployeeSession } from '@/utils/employeeSession';
+import { saveEmployeeSession } from '@/features/auth/utils/employeeSession';
 import DocumentsPage from '@/pages/Employee/AddDocument/index';
 
 vi.mock('@/api/concertApi', () => ({

@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import { beforeEach, describe, expect, it } from 'vitest';
-import { saveEmployeeSession } from '@/utils/employeeSession';
+import { saveEmployeeSession } from '@/features/auth/utils/employeeSession';
 import ConcertSearchPage from '@/pages/Employee/SearchConcert/index';
 
 describe('ConcertSearchPage permissions', () => {

@@ -30,7 +30,7 @@ import PersonOutlineIcon from '@mui/icons-material/PersonOutlined';
 
 import type { Employee, EmployeePermission } from '@/types/promotion';
 import { managementApi } from '@/api/managementApi';
-import { getEmployeeSession } from '@/utils/employeeSession';
+import { getEmployeeSession } from '@/features/auth/utils/employeeSession';
 import Pagination from '@/shared/components/Pagination';
 import PasswordResetRequestsPanel from '@/pages/Employee/employees/PasswordResetRequestsPanel';
 import { useNavigate } from 'react-router-dom';

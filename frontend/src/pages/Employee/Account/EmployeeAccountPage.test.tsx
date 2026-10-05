@@ -23,7 +23,7 @@ const { saveEmployeeSession } = vi.hoisted(() => ({
   saveEmployeeSession: vi.fn(),
 }));
 
-vi.mock('@/utils/employeeSession', () => ({
+vi.mock('@/features/auth/utils/employeeSession', () => ({
   getEmployeeSession: vi.fn(() => null),
   saveEmployeeSession,
   clearEmployeeSession: vi.fn(),

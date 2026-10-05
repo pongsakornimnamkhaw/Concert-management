@@ -22,7 +22,7 @@ import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import { Dayjs } from 'dayjs';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import { concertApi, ConcertData, TaskData } from '@/api/concertApi';
-import { useFeatureAccess } from '@/access/useFeatureAccess';
+import { useFeatureAccess } from '@/features/auth/access/useFeatureAccess';
 
 const ResponsibilityPage = () => {
   const { canEdit } = useFeatureAccess('concert.assignment');

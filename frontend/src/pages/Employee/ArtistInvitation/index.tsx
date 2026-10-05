@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Box, Typography, Button, Paper, Grid, Select, MenuItem, FormControl, Table, TableHead, TableBody, TableRow, TableCell } from '@mui/material';
 import { artistApi, type ArtistData, type InvitationData } from '@/api/artistApi';
-import { useFeatureAccess } from '@/access/useFeatureAccess';
+import { useFeatureAccess } from '@/features/auth/access/useFeatureAccess';
 
 const InvitationPage = () => {
   const { canEdit } = useFeatureAccess('artist.invitation');

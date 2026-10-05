@@ -16,8 +16,8 @@ import {
   getBookingsSnapshot, subscribeBookings,
 } from '@/utils/bookingStore';
 import { bookingPaymentApi } from '@/api/bookingPaymentApi';
-import { getEmployeeSession } from '@/utils/employeeSession';
-import { useModuleAccess } from '@/access/useModuleAccess';
+import { getEmployeeSession } from '@/features/auth/utils/employeeSession';
+import { useModuleAccess } from '@/features/auth/access/useModuleAccess';
 
 const money = (val: number) => `${val.toLocaleString('th-TH')} ฿`;
 
